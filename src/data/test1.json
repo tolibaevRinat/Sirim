@@ -1,0 +1,684 @@
+{
+  "id": "test1",
+  "subject": "Informatika",
+  "grade": "5-9-sinflar",
+  "language": "uz",
+  "note": "Oʻzbekiston umumiy oʻrta taʼlim dasturi asosida tuzilgan namunaviy testlar. Oʻqituvchi tomonidan tasdiqlanishi kerak.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Kompyuterning asosiy qurilmasi qaysi?",
+      "options": ["Klaviatura", "Sichqoncha", "Protsessor", "Monitor"],
+      "correctIndex": 2
+    },
+    {
+      "id": 2,
+      "question": "Quyidagilardan qaysi biri kiritish qurilmasi?",
+      "options": ["Monitor", "Klaviatura", "Printer", "Karnay"],
+      "correctIndex": 1
+    },
+    {
+      "id": 3,
+      "question": "Quyidagilardan qaysi biri chiqarish qurilmasi?",
+      "options": ["Skaner", "Monitor", "Klaviatura", "Sichqoncha"],
+      "correctIndex": 1
+    },
+    {
+      "id": 4,
+      "question": "Kompyuterning \"miyasi\" deb nima ataladi?",
+      "options": ["RAM", "Protsessor", "Vinchester", "Ona plata"],
+      "correctIndex": 1
+    },
+    {
+      "id": 5,
+      "question": "RAM nima uchun ishlatiladi?",
+      "options": [
+        "Doimiy xotira",
+        "Vaqtinchalik xotira",
+        "Operatsion tizim",
+        "Internet aloqa"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 6,
+      "question": "ROM qisqartmasi nimani anglatadi?",
+      "options": [
+        "Random Operation Memory",
+        "Read Only Memory",
+        "Real Output Module",
+        "Run On Mode"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 7,
+      "question": "Quyidagilardan qaysi biri dasturiy taʼminot?",
+      "options": ["Monitor", "Klaviatura", "Windows", "Sichqoncha"],
+      "correctIndex": 2
+    },
+    {
+      "id": 8,
+      "question": "Operatsion tizimga qaysi misol?",
+      "options": ["MS Word", "Windows", "Excel", "Google Chrome"],
+      "correctIndex": 1
+    },
+    {
+      "id": 9,
+      "question": "1 bayt necha bitdan iborat?",
+      "options": ["4", "8", "16", "32"],
+      "correctIndex": 1
+    },
+    {
+      "id": 10,
+      "question": "1 KB necha baytga teng?",
+      "options": ["100", "1000", "1024", "2048"],
+      "correctIndex": 2
+    },
+    {
+      "id": 11,
+      "question": "1 MB necha KB ga teng?",
+      "options": ["1000", "1024", "512", "2048"],
+      "correctIndex": 1
+    },
+    {
+      "id": 12,
+      "question": "Eng kichik axborot birligi qaysi?",
+      "options": ["Bayt", "Bit", "KB", "MB"],
+      "correctIndex": 1
+    },
+    {
+      "id": 13,
+      "question": "Sichqonchaning chap tugmasi nima uchun ishlatiladi?",
+      "options": ["Tanlash", "Koʻchirish", "Oʻchirish", "Yopish"],
+      "correctIndex": 0
+    },
+    {
+      "id": 14,
+      "question": "Klaviaturadagi \"Enter\" tugmasining vazifasi?",
+      "options": ["Oʻchirish", "Tasdiqlash", "Bekor qilish", "Yopish"],
+      "correctIndex": 1
+    },
+    {
+      "id": 15,
+      "question": "\"Esc\" tugmasi qanday vazifani bajaradi?",
+      "options": ["Bekor qilish", "Saqlash", "Chop etish", "Koʻchirish"],
+      "correctIndex": 0
+    },
+    {
+      "id": 16,
+      "question": "Kompyuter tarmogʻining mahalliy turi qaysi?",
+      "options": ["Internet", "LAN", "WAN", "MAN"],
+      "correctIndex": 1
+    },
+    {
+      "id": 17,
+      "question": "WWW qisqartmasi nimani anglatadi?",
+      "options": [
+        "World Wide Web",
+        "Web Wide World",
+        "Wireless Web World",
+        "Wide Web Way"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 18,
+      "question": "Internet brauzeriga misol?",
+      "options": ["MS Word", "Google Chrome", "Excel", "Paint"],
+      "correctIndex": 1
+    },
+    {
+      "id": 19,
+      "question": "Email manzilida qaysi belgi ishlatiladi?",
+      "options": ["#", "@", "&", "$"],
+      "correctIndex": 1
+    },
+    {
+      "id": 20,
+      "question": "Saytlarni qidirish uchun ishlatiladigan tizim qanday nomlanadi?",
+      "options": ["Brauzer", "Qidiruv tizimi", "Antivirus", "Drayver"],
+      "correctIndex": 1
+    },
+    {
+      "id": 21,
+      "question": "Google qanday tizim hisoblanadi?",
+      "options": ["Brauzer", "Qidiruv tizimi", "Operatsion tizim", "Antivirus"],
+      "correctIndex": 1
+    },
+    {
+      "id": 22,
+      "question": "Faylga berilgan toʻliq nom qanday qismlardan iborat?",
+      "options": ["Faqat nom", "Nom va kengaytma", "Faqat raqam", "Faqat sana"],
+      "correctIndex": 1
+    },
+    {
+      "id": 23,
+      "question": ".docx kengaytmasi qaysi dasturga tegishli?",
+      "options": ["Excel", "Word", "PowerPoint", "Paint"],
+      "correctIndex": 1
+    },
+    {
+      "id": 24,
+      "question": ".xlsx kengaytmasi qaysi dasturga tegishli?",
+      "options": ["Word", "Excel", "PowerPoint", "Notepad"],
+      "correctIndex": 1
+    },
+    {
+      "id": 25,
+      "question": ".pptx kengaytmasi qaysi dasturga tegishli?",
+      "options": ["Excel", "PowerPoint", "Word", "Paint"],
+      "correctIndex": 1
+    },
+    {
+      "id": 26,
+      "question": "Rasm fayllarining kengaytmasi qaysi?",
+      "options": [".jpg", ".docx", ".mp3", ".exe"],
+      "correctIndex": 0
+    },
+    {
+      "id": 27,
+      "question": "Audio fayl kengaytmasi qaysi?",
+      "options": [".mp3", ".jpg", ".docx", ".pdf"],
+      "correctIndex": 0
+    },
+    {
+      "id": 28,
+      "question": "Video fayl kengaytmasi qaysi?",
+      "options": [".mp4", ".docx", ".xlsx", ".txt"],
+      "correctIndex": 0
+    },
+    {
+      "id": 29,
+      "question": ".exe kengaytmasi nimani anglatadi?",
+      "options": ["Hujjat", "Rasm", "Bajariluvchi fayl", "Audio"],
+      "correctIndex": 2
+    },
+    {
+      "id": 30,
+      "question": "Papka (jild) nima uchun ishlatiladi?",
+      "options": [
+        "Fayllarni saqlash uchun",
+        "Internet uchun",
+        "Chop etish uchun",
+        "Oʻchirish uchun"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 31,
+      "question": "Faylni nusxalash uchun qaysi tugmalar birikmasi?",
+      "options": ["Ctrl+C", "Ctrl+V", "Ctrl+X", "Ctrl+Z"],
+      "correctIndex": 0
+    },
+    {
+      "id": 32,
+      "question": "Faylni qoʻyish (Paste) uchun?",
+      "options": ["Ctrl+V", "Ctrl+C", "Ctrl+X", "Ctrl+S"],
+      "correctIndex": 0
+    },
+    {
+      "id": 33,
+      "question": "Faylni kesib olish (Cut) uchun?",
+      "options": ["Ctrl+X", "Ctrl+C", "Ctrl+V", "Ctrl+P"],
+      "correctIndex": 0
+    },
+    {
+      "id": 34,
+      "question": "Hujjatni saqlash uchun?",
+      "options": ["Ctrl+S", "Ctrl+P", "Ctrl+O", "Ctrl+N"],
+      "correctIndex": 0
+    },
+    {
+      "id": 35,
+      "question": "Bekor qilish (Undo) uchun?",
+      "options": ["Ctrl+Z", "Ctrl+Y", "Ctrl+S", "Ctrl+A"],
+      "correctIndex": 0
+    },
+    {
+      "id": 36,
+      "question": "Hammasini tanlash uchun?",
+      "options": ["Ctrl+A", "Ctrl+S", "Ctrl+T", "Ctrl+E"],
+      "correctIndex": 0
+    },
+    {
+      "id": 37,
+      "question": "Chop etish (Print) uchun?",
+      "options": ["Ctrl+P", "Ctrl+O", "Ctrl+S", "Ctrl+N"],
+      "correctIndex": 0
+    },
+    {
+      "id": 38,
+      "question": "MS Wordda matnni qalin yozish uchun?",
+      "options": ["Ctrl+B", "Ctrl+I", "Ctrl+U", "Ctrl+L"],
+      "correctIndex": 0
+    },
+    {
+      "id": 39,
+      "question": "MS Wordda matnni qiyshiq (Italic) yozish uchun?",
+      "options": ["Ctrl+I", "Ctrl+B", "Ctrl+U", "Ctrl+S"],
+      "correctIndex": 0
+    },
+    {
+      "id": 40,
+      "question": "MS Wordda matn tagiga chizish (Underline) uchun?",
+      "options": ["Ctrl+U", "Ctrl+B", "Ctrl+I", "Ctrl+L"],
+      "correctIndex": 0
+    },
+    {
+      "id": 41,
+      "question": "Excelda asosiy ish maydoni nima deb ataladi?",
+      "options": ["Slayd", "Yacheyka (hujayra)", "Sahifa", "Jadval"],
+      "correctIndex": 1
+    },
+    {
+      "id": 42,
+      "question": "Excelda yacheyka manzili qanday yoziladi?",
+      "options": ["A1", "1A", "A-1", "1.A"],
+      "correctIndex": 0
+    },
+    {
+      "id": 43,
+      "question": "Excelda yigʻindini hisoblovchi funksiya?",
+      "options": ["SUM", "MULT", "AVG", "MAX"],
+      "correctIndex": 0
+    },
+    {
+      "id": 44,
+      "question": "Excelda oʻrtacha qiymatni topadigan funksiya?",
+      "options": ["AVERAGE", "SUM", "COUNT", "MAX"],
+      "correctIndex": 0
+    },
+    {
+      "id": 45,
+      "question": "Excelda eng katta qiymatni topadigan funksiya?",
+      "options": ["MAX", "MIN", "SUM", "AVG"],
+      "correctIndex": 0
+    },
+    {
+      "id": 46,
+      "question": "Excelda eng kichik qiymatni topadigan funksiya?",
+      "options": ["MIN", "MAX", "SUM", "COUNT"],
+      "correctIndex": 0
+    },
+    {
+      "id": 47,
+      "question": "PowerPointning asosiy elementi qanday nomlanadi?",
+      "options": ["Yacheyka", "Slayd", "Sahifa", "Jadval"],
+      "correctIndex": 1
+    },
+    {
+      "id": 48,
+      "question": "PowerPointda taqdimotni boshlash uchun qaysi tugma?",
+      "options": ["F5", "F1", "F2", "Esc"],
+      "correctIndex": 0
+    },
+    {
+      "id": 49,
+      "question": "Algoritm soʻzi qaysi olim sharafiga qoʻyilgan?",
+      "options": ["Pifagor", "Al-Xorazmiy", "Beruniy", "Forobiy"],
+      "correctIndex": 1
+    },
+    {
+      "id": 50,
+      "question": "Algoritmning xossalariga quyidagilardan qaysilari kiradi?",
+      "options": [
+        "Faqat tushunarlilik",
+        "Faqat aniqlik",
+        "Faqat cheklilik",
+        "Tushunarlilik, aniqlik va cheklilik"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 51,
+      "question": "Blok-sxemadagi toʻrtburchak nimani bildiradi?",
+      "options": ["Boshlanish", "Jarayon (amal)", "Shart", "Tugash"],
+      "correctIndex": 1
+    },
+    {
+      "id": 52,
+      "question": "Blok-sxemadagi romb nimani bildiradi?",
+      "options": ["Jarayon", "Shart", "Boshlanish", "Tugash"],
+      "correctIndex": 1
+    },
+    {
+      "id": 53,
+      "question": "Blok-sxemadagi parallelogramm nimani bildiradi?",
+      "options": ["Kiritish-chiqarish", "Jarayon", "Shart", "Tugash"],
+      "correctIndex": 0
+    },
+    {
+      "id": 54,
+      "question": "Chiziqli algoritm qanday algoritm?",
+      "options": [
+        "Shartsiz, ketma-ket bajariladigan",
+        "Shartli",
+        "Takrorlanuvchi",
+        "Aralash"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 55,
+      "question": "Tarmoqlanuvchi algoritmda nima boʻladi?",
+      "options": [
+        "Faqat takrorlanish",
+        "Shart asosida tanlash",
+        "Faqat amal",
+        "Faqat kiritish"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 56,
+      "question": "Sikl (takror) algoritmi nima qiladi?",
+      "options": [
+        "Bir marta bajaradi",
+        "Amallarni takrorlaydi",
+        "Faqat tekshiradi",
+        "Faqat oʻchiradi"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 57,
+      "question": "Oʻnlik sanoq tizimida nechta raqam ishlatiladi?",
+      "options": ["8", "10", "16", "2"],
+      "correctIndex": 1
+    },
+    {
+      "id": 58,
+      "question": "Ikkilik sanoq tizimida nechta raqam bor?",
+      "options": ["2", "8", "10", "16"],
+      "correctIndex": 0
+    },
+    {
+      "id": 59,
+      "question": "Ikkilik sanoq tizimida 5 sonining koʻrinishi qanday?",
+      "options": ["100", "101", "110", "111"],
+      "correctIndex": 1
+    },
+    {
+      "id": 60,
+      "question": "Ikkilik sanoq tizimida 10 sonining koʻrinishi?",
+      "options": ["1010", "1100", "1001", "1110"],
+      "correctIndex": 0
+    },
+    {
+      "id": 61,
+      "question": "Ikkilik 11 sonining oʻnlik qiymati?",
+      "options": ["2", "3", "4", "5"],
+      "correctIndex": 1
+    },
+    {
+      "id": 62,
+      "question": "Ikkilik 1000 sonining oʻnlik qiymati?",
+      "options": ["4", "6", "8", "16"],
+      "correctIndex": 2
+    },
+    {
+      "id": 63,
+      "question": "Oʻn oltilik sanoq tizimida nechta belgi mavjud?",
+      "options": ["8", "10", "16", "32"],
+      "correctIndex": 2
+    },
+    {
+      "id": 64,
+      "question": "Oʻn oltilik sanoq tizimida A belgisi nimaga teng?",
+      "options": ["9", "10", "11", "12"],
+      "correctIndex": 1
+    },
+    {
+      "id": 65,
+      "question": "Oʻn oltilik sanoq tizimida F belgisi nimaga teng?",
+      "options": ["14", "15", "16", "17"],
+      "correctIndex": 1
+    },
+    {
+      "id": 66,
+      "question": "Antivirus dasturi nima uchun moʻljallangan?",
+      "options": [
+        "Tarmoq uchun",
+        "Viruslardan himoya qilish",
+        "Faylni saqlash",
+        "Chop etish"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 67,
+      "question": "Kompyuter virusi qanday tarqalishi mumkin?",
+      "options": [
+        "Internet va flesh xotira orqali",
+        "Faqat printerda",
+        "Ovoz orqali",
+        "Quyosh nuri orqali"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 68,
+      "question": "Quyidagilardan qaysi biri antivirus dasturi?",
+      "options": ["MS Word", "Kaspersky", "Photoshop", "Excel"],
+      "correctIndex": 1
+    },
+    {
+      "id": 69,
+      "question": "Parol (password) nima uchun ishlatiladi?",
+      "options": [
+        "Faylni koʻrish",
+        "Maʼlumotni himoya qilish",
+        "Chop etish",
+        "Saqlash"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 70,
+      "question": "Spam nima?",
+      "options": [
+        "Foydali xabar",
+        "Keraksiz va majburiy yuborilgan xabar",
+        "Antivirus",
+        "Brauzer"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 71,
+      "question": "HTML qaysi turdagi til hisoblanadi?",
+      "options": [
+        "Dasturlash tili",
+        "Belgilash (markup) tili",
+        "Maʼlumot tili",
+        "Tarmoq protokoli"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 72,
+      "question": "HTML hujjatining asosiy teg juftligi qaysi?",
+      "options": [
+        "<html>...</html>",
+        "[html]...[/html]",
+        "{html}...{/html}",
+        "(html)...(/html)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 73,
+      "question": "HTMLda eng katta sarlavha tegi qaysi?",
+      "options": ["<h1>", "<h6>", "<p>", "<a>"],
+      "correctIndex": 0
+    },
+    {
+      "id": 74,
+      "question": "HTMLda abzats (paragraf) tegi qaysi?",
+      "options": ["<p>", "<a>", "<h1>", "<br>"],
+      "correctIndex": 0
+    },
+    {
+      "id": 75,
+      "question": "HTMLda havola (link) tegi qaysi?",
+      "options": ["<a>", "<p>", "<img>", "<br>"],
+      "correctIndex": 0
+    },
+    {
+      "id": 76,
+      "question": "HTMLda rasm joylash tegi qaysi?",
+      "options": ["<img>", "<a>", "<p>", "<h1>"],
+      "correctIndex": 0
+    },
+    {
+      "id": 77,
+      "question": "HTMLda yangi qatorga oʻtish tegi qaysi?",
+      "options": ["<br>", "<p>", "<hr>", "<a>"],
+      "correctIndex": 0
+    },
+    {
+      "id": 78,
+      "question": "Pascal tilida dastur qaysi soʻz bilan boshlanadi?",
+      "options": ["Begin", "Program", "Start", "Run"],
+      "correctIndex": 1
+    },
+    {
+      "id": 79,
+      "question": "Pascal tilida dastur qaysi belgi bilan tugaydi?",
+      "options": ["End.", "End;", "Stop", "Finish"],
+      "correctIndex": 0
+    },
+    {
+      "id": 80,
+      "question": "Pascal tilida oʻzgaruvchini eʼlon qilish kalit soʻzi?",
+      "options": ["var", "let", "dim", "int"],
+      "correctIndex": 0
+    },
+    {
+      "id": 81,
+      "question": "Pascal tilida butun son turi qanday nomlanadi?",
+      "options": ["integer", "real", "char", "string"],
+      "correctIndex": 0
+    },
+    {
+      "id": 82,
+      "question": "Pascal tilida haqiqiy son turi?",
+      "options": ["real", "integer", "char", "boolean"],
+      "correctIndex": 0
+    },
+    {
+      "id": 83,
+      "question": "Pascal tilida matn (qator) turi?",
+      "options": ["string", "int", "float", "char"],
+      "correctIndex": 0
+    },
+    {
+      "id": 84,
+      "question": "Pascal tilida mantiqiy tur?",
+      "options": ["boolean", "int", "real", "char"],
+      "correctIndex": 0
+    },
+    {
+      "id": 85,
+      "question": "Pascalda ekranga maʼlumot chiqarish operatori?",
+      "options": ["write", "read", "get", "put"],
+      "correctIndex": 0
+    },
+    {
+      "id": 86,
+      "question": "Pascalda klaviaturadan maʼlumot kiritish operatori?",
+      "options": ["read", "write", "get", "input"],
+      "correctIndex": 0
+    },
+    {
+      "id": 87,
+      "question": "Pythonda ekranga chiqarish funksiyasi?",
+      "options": ["print()", "write()", "echo()", "output()"],
+      "correctIndex": 0
+    },
+    {
+      "id": 88,
+      "question": "Pythonda kiritish funksiyasi?",
+      "options": ["input()", "read()", "get()", "scan()"],
+      "correctIndex": 0
+    },
+    {
+      "id": 89,
+      "question": "Pythonda izoh (kommentariya) belgisi?",
+      "options": ["//", "#", "--", "/*"],
+      "correctIndex": 1
+    },
+    {
+      "id": 90,
+      "question": "Pythonda butun son turi qaysi?",
+      "options": ["int", "integer", "float", "num"],
+      "correctIndex": 0
+    },
+    {
+      "id": 91,
+      "question": "Mantiqiy AND amali natijasi: rost AND yolgʻon = ?",
+      "options": ["Rost", "Yolgʻon", "Aniqsiz", "Boʻsh"],
+      "correctIndex": 1
+    },
+    {
+      "id": 92,
+      "question": "Mantiqiy OR amali natijasi: rost OR yolgʻon = ?",
+      "options": ["Rost", "Yolgʻon", "Aniqsiz", "Boʻsh"],
+      "correctIndex": 0
+    },
+    {
+      "id": 93,
+      "question": "NOT amali nimani bildiradi?",
+      "options": ["Inkor (rad etish)", "Va", "Yoki", "Yigʻindi"],
+      "correctIndex": 0
+    },
+    {
+      "id": 94,
+      "question": "NOT(rost) ifoda natijasi?",
+      "options": ["Rost", "Yolgʻon", "Boʻsh", "Aniqsiz"],
+      "correctIndex": 1
+    },
+    {
+      "id": 95,
+      "question": "Ikkilik 1 AND 1 = ?",
+      "options": ["0", "1", "2", "11"],
+      "correctIndex": 1
+    },
+    {
+      "id": 96,
+      "question": "Ikkilik 1 OR 0 = ?",
+      "options": ["1", "0", "2", "10"],
+      "correctIndex": 0
+    },
+    {
+      "id": 97,
+      "question": "Ikkilik 0 AND 1 = ?",
+      "options": ["1", "0", "2", "11"],
+      "correctIndex": 1
+    },
+    {
+      "id": 98,
+      "question": "Birinchi elektron kompyuter qaysi asrda yaratilgan?",
+      "options": ["XVIII asr", "XIX asr", "XX asr", "XXI asr"],
+      "correctIndex": 2
+    },
+    {
+      "id": 99,
+      "question": "Birinchi elektron kompyuterning nomi?",
+      "options": ["ENIAC", "Apple", "IBM PC", "Lenovo"],
+      "correctIndex": 0
+    },
+    {
+      "id": 100,
+      "question": "World Wide Web (WWW) ixtirochisi kim?",
+      "options": [
+        "Bill Gates",
+        "Steve Jobs",
+        "Tim Berners-Lee",
+        "Mark Zuckerberg"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}
