@@ -91,8 +91,8 @@
 
 .test-counter {
   position: fixed;
-  top: 20px;
-  right: 24px;
+  top: max(20px, env(safe-area-inset-top));
+  right: max(24px, env(safe-area-inset-right));
   background: #ffffff;
   border: 1px solid #e6e1d6;
   border-radius: 999px;
@@ -107,11 +107,24 @@
 
 .finish-button {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: max(24px, calc(env(safe-area-inset-bottom) + 12px));
+  right: max(24px, env(safe-area-inset-right));
   z-index: 10;
   padding: 14px 32px;
   font-size: 16px;
+}
+
+.test-header {
+  max-width: 640px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.test-title {
+  margin: 0;
+  font: 500 36px/1.2 var(--sans);
+  letter-spacing: -0.6px;
+  color: #1a1a1a;
 }
 
 .test-questions {
@@ -232,4 +245,79 @@
   font: 500 96px/1 var(--sans);
   color: #1a1a1a;
   letter-spacing: -3px;
+}
+
+@media (max-width: 480px) {
+  .pill {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .test-screen {
+    padding: 64px 12px 96px;
+  }
+
+  .counter-label {
+    display: none;
+  }
+
+  .test-counter {
+    font-size: 13px;
+    padding: 8px 14px;
+    top: max(12px, env(safe-area-inset-top));
+    right: max(12px, env(safe-area-inset-right));
+  }
+
+  .finish-button {
+    padding: 12px 22px;
+    font-size: 15px;
+    bottom: max(14px, calc(env(safe-area-inset-bottom) + 8px));
+    right: max(14px, env(safe-area-inset-right));
+  }
+
+  .test-header {
+    margin-bottom: 28px;
+  }
+
+  .test-title {
+    font-size: 26px;
+    letter-spacing: -0.4px;
+  }
+
+  .test-questions {
+    gap: 28px;
+  }
+
+  .question-text {
+    font-size: 16px;
+  }
+
+  .option-pill {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .modal-card {
+    padding: 24px 20px 20px;
+    border-radius: 20px;
+  }
+
+  .modal-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .modal-actions .pill-button {
+    padding: 11px 24px;
+    font-size: 15px;
+  }
+
+  .result-percent {
+    font-size: 64px;
+    letter-spacing: -2px;
+  }
 }

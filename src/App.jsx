@@ -10,6 +10,12 @@ const TESTS = {
   'test 3': test3,
 }
 
+const TEST_TITLES = {
+  test1: 'Informatika fanidan testlar',
+  test2: 'Rus tilidan testlar',
+  test3: 'Ingliz tilidan testlar',
+}
+
 function shuffle(array) {
   const arr = [...array]
   for (let i = arr.length - 1; i > 0; i--) {
@@ -128,8 +134,13 @@ function App() {
     return (
       <main className="test-screen">
         <div className="test-counter">
-          Belgilangan: {answered} / {total}
+          <span className="counter-label">Belgilangan: </span>
+          {answered} / {total}
         </div>
+
+        <header className="test-header">
+          <h1 className="test-title">{TEST_TITLES[currentTest.id]}</h1>
+        </header>
 
         <div className="test-questions">
           {currentTest.questions.map((q, qIndex) => (
