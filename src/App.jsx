@@ -5,9 +5,9 @@ import test2 from './data/test2.json'
 import test3 from './data/test3.json'
 
 const TESTS = {
-  'test 1': test1,
-  'test 2': test2,
-  'test 3': test3,
+  'abdimuratova gozzal': test1,
+  'ibrgagimova feruza': test2,
+  'jaqsilikov atabek': test3,
 }
 
 const TEST_TITLES = {
@@ -59,7 +59,7 @@ function App() {
       setError('')
       window.scrollTo(0, 0)
     } else {
-      setError('Kalit notoʻgʻri')
+      setError('Ism mos kelmadi')
     }
   }
 
@@ -110,7 +110,7 @@ function App() {
           <h1 className="login-title">Testni boshlash</h1>
           <input
             type="text"
-            className="pill pill-input"
+            className={'pill pill-input' + (error ? ' has-error' : '')}
             placeholder="Ism Familiya"
             value={name}
             onChange={(e) => {

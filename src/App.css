@@ -59,6 +59,11 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
+.pill-input.has-error,
+.pill-input.has-error:focus {
+  border-color: #b3261e;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
