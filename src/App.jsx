@@ -1,95 +1,95 @@
-import { useState } from 'react'
-import './App.css'
-import test1 from './data/test1.json'
-import test2 from './data/test2.json'
-import test3 from './data/test3.json'
+import { useState } from "react";
+import "./App.css";
+import test1 from "./data/test1.json";
+import test2 from "./data/test2.json";
+import test3 from "./data/test3.json";
 
 const TESTS = {
-  'abdimuratova gozzal': test1,
-  'ibrgagimova feruza': test2,
-  'jaqsilikov atabek': test3,
-}
+  "abdimuratova gozzal": test1,
+  "ibrgagimova feruza": test2,
+  "jaqsilikov atabek": test3,
+};
 
 const TEST_TITLES = {
-  test1: 'Informatika fanidan testlar',
-  test2: 'Rus tilidan testlar',
-  test3: 'Ingliz tilidan testlar',
-}
+  test1: "Informatika fanidan testlar",
+  test2: "Rus tilidan testlar",
+  test3: "Ingliz tilidan testlar",
+};
 
 function shuffle(array) {
-  const arr = [...array]
+  const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
-  return arr
+  return arr;
 }
 
 function shuffleTest(test) {
   const shuffled = shuffle(test.questions).map((q) => {
-    const order = shuffle([0, 1, 2, 3])
+    const order = shuffle([0, 1, 2, 3]);
     return {
       ...q,
       options: order.map((i) => q.options[i]),
       correctIndex: order.indexOf(q.correctIndex),
-    }
-  })
-  return { ...test, questions: shuffled }
+    };
+  });
+  return { ...test, questions: shuffled };
 }
 
 function App() {
-  const [screen, setScreen] = useState('start')
-  const [name, setName] = useState('')
-  const [error, setError] = useState('')
-  const [currentTest, setCurrentTest] = useState(null)
-  const [answers, setAnswers] = useState({})
-  const [showConfirm, setShowConfirm] = useState(false)
-  const [percent, setPercent] = useState(0)
+  const [screen, setScreen] = useState("start");
+  const [name, setName] = useState("");
+  const [error, setError] = useState("");
+  const [currentTest, setCurrentTest] = useState(null);
+  const [answers, setAnswers] = useState({});
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [percent, setPercent] = useState(0);
 
-  const handleStart = () => setScreen('login')
+  const handleStart = () => setScreen("login");
 
   const handleLogin = (e) => {
-    e.preventDefault()
-    const key = name.trim().toLowerCase()
-    const test = TESTS[key]
+    e.preventDefault();
+    const key = name.trim().toLowerCase();
+    const test = TESTS[key];
     if (test) {
-      setCurrentTest(shuffleTest(test))
-      setAnswers({})
-      setScreen('test')
-      setError('')
-      window.scrollTo(0, 0)
+      setCurrentTest(shuffleTest(test));
+      setAnswers({});
+      setScreen("test");
+      setError("");
+      window.scrollTo(0, 0);
     } else {
-      setError('Ism mos kelmadi')
+      setError("Ism mos kelmadi");
     }
-  }
+  };
 
   const selectAnswer = (qid, idx) => {
-    setAnswers((prev) => ({ ...prev, [qid]: idx }))
-  }
+    setAnswers((prev) => ({ ...prev, [qid]: idx }));
+  };
 
   const computeResult = () => {
-    const total = currentTest.questions.length
-    let correct = 0
+    const total = currentTest.questions.length;
+    let correct = 0;
     for (const q of currentTest.questions) {
-      if (answers[q.id] === q.correctIndex) correct++
+      if (answers[q.id] === q.correctIndex) correct++;
     }
-    setPercent(Math.round((correct / total) * 100))
-    setShowConfirm(false)
-    setScreen('result')
-    window.scrollTo(0, 0)
-  }
+    setPercent(Math.round((correct / total) * 100));
+    setShowConfirm(false);
+    setScreen("result");
+    window.scrollTo(0, 0);
+  };
 
   const finishTest = () => {
-    const total = currentTest.questions.length
-    const answered = Object.keys(answers).length
+    const total = currentTest.questions.length;
+    const answered = Object.keys(answers).length;
     if (answered < total) {
-      setShowConfirm(true)
+      setShowConfirm(true);
     } else {
-      computeResult()
+      computeResult();
     }
-  }
+  };
 
-  if (screen === 'start') {
+  if (screen === "start") {
     return (
       <main className="screen">
         <button
@@ -100,22 +100,22 @@ function App() {
           Testni boshlash
         </button>
       </main>
-    )
+    );
   }
 
-  if (screen === 'login') {
+  if (screen === "login") {
     return (
       <main className="screen">
         <form className="login-form" onSubmit={handleLogin}>
           <h1 className="login-title">Testni boshlash</h1>
           <input
             type="text"
-            className={'pill pill-input' + (error ? ' has-error' : '')}
+            className={"pill pill-input" + (error ? " has-error" : "")}
             placeholder="Ism Familiya"
             value={name}
             onChange={(e) => {
-              setName(e.target.value)
-              if (error) setError('')
+              setName(e.target.value);
+              if (error) setError("");
             }}
             autoFocus
           />
@@ -125,12 +125,12 @@ function App() {
           </button>
         </form>
       </main>
-    )
+    );
   }
 
-  if (screen === 'test') {
-    const total = currentTest.questions.length
-    const answered = Object.keys(answers).length
+  if (screen === "test") {
+    const total = currentTest.questions.length;
+    const answered = Object.keys(answers).length;
     return (
       <main className="test-screen">
         <div className="test-counter">
@@ -150,19 +150,19 @@ function App() {
               </p>
               <div className="options">
                 {q.options.map((opt, i) => {
-                  const isSelected = answers[q.id] === i
+                  const isSelected = answers[q.id] === i;
                   return (
                     <button
                       key={i}
                       type="button"
                       className={
-                        'pill option-pill' + (isSelected ? ' is-selected' : '')
+                        "pill option-pill" + (isSelected ? " is-selected" : "")
                       }
                       onClick={() => selectAnswer(q.id, i)}
                     >
                       {opt}
                     </button>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -190,7 +190,8 @@ function App() {
               onClick={(e) => e.stopPropagation()}
             >
               <p className="modal-text">
-                Siz hamma savollarga javob bermadingiz. Testni yakunlamoqchimisiz?
+                Siz hamma savollarga javob bermadingiz. Testni
+                yakunlamoqchimisiz?
               </p>
               <div className="modal-actions">
                 <button
@@ -212,21 +213,37 @@ function App() {
           </div>
         )}
       </main>
-    )
+    );
   }
 
-  if (screen === 'result') {
+  if (screen === "result") {
+    const handleRetry = () => {
+      setName("");
+      setError("");
+      setAnswers({});
+      setCurrentTest(null);
+      setPercent(0);
+      setScreen("login");
+    };
+
     return (
       <main className="screen">
         <div className="result">
           <p className="result-label">Natija</p>
           <p className="result-percent">{percent}%</p>
+          <button
+            type="button"
+            className="pill pill-button retry-button"
+            onClick={handleRetry}
+          >
+            Bosh saxifa
+          </button>
         </div>
       </main>
-    )
+    );
   }
 
-  return null
+  return null;
 }
 
-export default App
+export default App;

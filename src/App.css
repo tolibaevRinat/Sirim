@@ -252,6 +252,10 @@
   letter-spacing: -3px;
 }
 
+.retry-button {
+  margin-top: 16px;
+}
+
 @media (max-width: 480px) {
   .pill {
     font-size: 18px;
