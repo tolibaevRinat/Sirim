@@ -37,6 +37,21 @@ function shuffleTest(test) {
   return { ...test, questions: shuffled };
 }
 
+function Brand() {
+  return (
+    <div className="brand">
+      <img
+        src="/NMPI-logo-photoaidcom-cropped.jpg"
+        alt="NMPI Logo"
+        className="brand-logo"
+      />
+      <h1 className="brand-title">
+        O'qituvchilar kompetentligini tekshirish sayti
+      </h1>
+    </div>
+  );
+}
+
 function App() {
   const [screen, setScreen] = useState("start");
   const [name, setName] = useState("");
@@ -92,6 +107,7 @@ function App() {
   if (screen === "start") {
     return (
       <main className="screen">
+        <Brand />
         <button
           type="button"
           className="pill pill-button"
@@ -106,8 +122,8 @@ function App() {
   if (screen === "login") {
     return (
       <main className="screen">
+        <Brand />
         <form className="login-form" onSubmit={handleLogin}>
-          <h1 className="login-title">Testni boshlash</h1>
           <input
             type="text"
             className={"pill pill-input" + (error ? " has-error" : "")}
