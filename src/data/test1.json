@@ -3,7 +3,7 @@
   "subject": "Informatika",
   "grade": "Oʻqituvchilar uchun (kompetentlik darajasi)",
   "language": "uz",
-  "note": "Oʻqituvchilarning kompetentligini tekshirish uchun moʻljallangan murakkablashtirilgan testlar. Sanoq tizimlari, algoritmlar murakkabligi, dasturlash, tarmoq va maʼlumotlar bazalari boʻyicha chuqurlashtirilgan savollar.",
+  "note": "Pedagogning kasbiy va mantiqiy malakasini baholashga moʻljallangan testlar. Sanoq tizimlari boʻyicha mantiqiy topshiriqlar, kod tahlili (trassirovka), algoritmlar va kombinatorika asosidagi savollar.",
   "questions": [
     {
       "id": 1,
@@ -25,33 +25,33 @@
     },
     {
       "id": 4,
-      "question": "1 GB necha MB ga teng (ikkilik tizimda)?",
-      "options": ["1000", "1024", "2048", "1048576"],
+      "question": "Qaysi sanoq tizimida 2 + 2 = 11 tenglik oʻrinli boʻladi?",
+      "options": ["2-lik", "3-lik", "4-lik", "5-lik"],
       "correctIndex": 1
     },
     {
       "id": 5,
-      "question": "1 TB necha GB ga teng?",
-      "options": ["512", "1000", "1024", "2048"],
-      "correctIndex": 2
+      "question": "1 + 1 = 10 ifodasi qaysi sanoq tizimlarida toʻgʻri boʻladi?",
+      "options": ["Faqat 2-lik tizimda", "Faqat 10-lik tizimda", "Asosi 2 dan kichik tizimlarda", "Asosi 2 yoki undan katta har qanday tizimda"],
+      "correctIndex": 3
     },
     {
       "id": 6,
-      "question": "8 bitda nechta turli qiymat ifodalanishi mumkin?",
-      "options": ["128", "255", "256", "512"],
+      "question": "10 bitda nechta turli qiymatni ifodalash mumkin?",
+      "options": ["256", "512", "1024", "2048"],
       "correctIndex": 2
     },
     {
       "id": 7,
-      "question": "ASCII jadvalida lotin \"A\" harfining kodi nechaga teng?",
-      "options": ["64", "65", "66", "97"],
-      "correctIndex": 1
+      "question": "Oʻn oltilik F₁₆ × 10₁₆ ifoda natijasi qaysi?",
+      "options": ["F0₁₆", "FF₁₆", "100₁₆", "1F0₁₆"],
+      "correctIndex": 0
     },
     {
       "id": 8,
-      "question": "ASCII jadvalida kichik \"a\" harfining kodi?",
-      "options": ["65", "96", "97", "100"],
-      "correctIndex": 2
+      "question": "Qaysi sanoq tizimida (asosi b) \"13\" yozuvi oʻnlikdagi 7 ga teng boʻladi?",
+      "options": ["b = 3", "b = 4", "b = 5", "b = 6"],
+      "correctIndex": 1
     },
     {
       "id": 9,
@@ -79,32 +79,27 @@
     },
     {
       "id": 13,
-      "question": "Sakkizlik sanoq tizimida nechta raqam ishlatiladi?",
-      "options": ["7", "8", "10", "16"],
-      "correctIndex": 1
+      "question": "Quyidagi yozuvlardan eng katta sonni belgilang.",
+      "options": ["100₂", "100₈", "100₁₀", "100₁₆"],
+      "correctIndex": 3
     },
     {
       "id": 14,
-      "question": "Oʻn oltilik B₁₆ + 7₁₆ amalining natijasi?",
-      "options": ["11", "12", "18", "1B"],
+      "question": "Oʻn oltilik 1F₁₆ + A₁₆ ifoda natijasi qaysi?",
+      "options": ["19", "29", "2A", "9A"],
       "correctIndex": 1
     },
     {
       "id": 15,
-      "question": "64 ta turli belgini kodlash uchun kamida necha bit kerak?",
-      "options": ["5", "6", "7", "8"],
+      "question": "1025 ta turli belgini kodlash uchun kamida necha bit kerak?",
+      "options": ["10", "11", "12", "16"],
       "correctIndex": 1
     },
     {
       "id": 16,
-      "question": "Fon Neyman arxitekturasining asosiy gʻoyasi nima?",
-      "options": [
-        "Dastur va maʼlumotlar bir xil xotirada saqlanishi",
-        "Faqat protsessor kerakligi",
-        "Faqat tashqi xotira ishlatish",
-        "Dastur har safar qayta yozilishi"
-      ],
-      "correctIndex": 0
+      "question": "Ikkilik tizimda 11₂ × 11₂ koʻpaytmaning natijasi qaysi?",
+      "options": ["100₂", "110₂", "1001₂", "1100₂"],
+      "correctIndex": 2
     },
     {
       "id": 17,
@@ -119,14 +114,9 @@
     },
     {
       "id": 18,
-      "question": "Kesh (cache) xotira nima vazifa bajaradi?",
-      "options": [
-        "Maʼlumotni doimiy saqlaydi",
-        "Protsessor bilan RAM oʻrtasidagi tezkor oraliq xotira",
-        "Internet aloqani taʼminlaydi",
-        "Faylni chop etadi"
-      ],
-      "correctIndex": 1
+      "question": "Pythondagi quyidagi kod nima chiqaradi?\nx = 5\ny = x\nx = 10\nprint(y)",
+      "options": ["5", "10", "0", "Xato"],
+      "correctIndex": 0
     },
     {
       "id": 19,
@@ -141,14 +131,9 @@
     },
     {
       "id": 20,
-      "question": "GPU qisqartmasi nimani anglatadi?",
-      "options": [
-        "General Purpose Unit",
-        "Graphics Processing Unit",
-        "Global Power Unit",
-        "Game Play Unit"
-      ],
-      "correctIndex": 1
+      "question": "Pythondagi quyidagi sikl nima chiqaradi?\nfor i in range(3):\n    print(i, end=' ')",
+      "options": ["0 1 2", "1 2 3", "0 1 2 3", "1 2"],
+      "correctIndex": 0
     },
     {
       "id": 21,
@@ -163,13 +148,8 @@
     },
     {
       "id": 22,
-      "question": "Protsessordagi ALU bloki qanday vazifani bajaradi?",
-      "options": [
-        "Maʼlumotni saqlaydi",
-        "Arifmetik va mantiqiy amallarni bajaradi",
-        "Boshqa qurilmalarni boshqaradi",
-        "Tarmoq aloqasini taʼminlaydi"
-      ],
+      "question": "Pythondagi kod natijasi qanday boʻladi?\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(len(a))",
+      "options": ["3", "4", "0", "Xato"],
       "correctIndex": 1
     },
     {
@@ -185,13 +165,8 @@
     },
     {
       "id": 24,
-      "question": "Drayver (driver) qanday vazifa bajaradi?",
-      "options": [
-        "Brauzer xizmati",
-        "Qurilma bilan operatsion tizim oʻrtasidagi vositachi dastur",
-        "Antivirus dasturi",
-        "Faylni siqish dasturi"
-      ],
+      "question": "Pythonda 2 + 3 * 4 - 1 ifoda qaysi qiymatga teng?",
+      "options": ["19", "13", "16", "20"],
       "correctIndex": 1
     },
     {
@@ -218,14 +193,9 @@
     },
     {
       "id": 27,
-      "question": "UEFI BIOS dan qanday farq qiladi?",
-      "options": [
-        "UEFI zamonaviyroq, 2 TB dan katta disklarni qoʻllab-quvvatlaydi",
-        "BIOS yangiroq",
-        "Hech qanday farq yoʻq",
-        "UEFI faqat Apple kompyuterlarida ishlaydi"
-      ],
-      "correctIndex": 0
+      "question": "Pythondagi kod nima chiqaradi?\ns = 'salom'\nprint(s[::-1])",
+      "options": ["salom", "molas", "s", "Xato"],
+      "correctIndex": 1
     },
     {
       "id": 28,
@@ -270,14 +240,9 @@
     },
     {
       "id": 34,
-      "question": "Rekursiya nima?",
-      "options": [
-        "Funksiyaning oʻzini chaqirishi",
-        "Oddiy sikl",
-        "Shart operatori",
-        "Massiv elementi"
-      ],
-      "correctIndex": 0
+      "question": "Quyidagi rekursiv funksiya f(4) chaqirilganda qaysi qiymatni qaytaradi?\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 1)",
+      "options": ["4", "10", "24", "120"],
+      "correctIndex": 2
     },
     {
       "id": 35,
@@ -292,9 +257,9 @@
     },
     {
       "id": 36,
-      "question": "Ikki oʻlchovli massiv (matritsa) elementiga qaysi koʻrinishda murojaat qilinadi?",
-      "options": ["A[i][j]", "A[i+j]", "A.i.j", "A(j)"],
-      "correctIndex": 0
+      "question": "Pythondagi kod nima chiqaradi?\nprint(len('hello world'))",
+      "options": ["10", "11", "12", "5"],
+      "correctIndex": 1
     },
     {
       "id": 37,
@@ -332,14 +297,9 @@
     },
     {
       "id": 41,
-      "question": "Graf (graph) tuzilmasi nimadan iborat?",
-      "options": [
-        "Tugunlar (vertex) va qirralar (edge)",
-        "Faqat tugunlar",
-        "Faqat raqamlar",
-        "Faqat satrlar"
-      ],
-      "correctIndex": 0
+      "question": "Saralangan 1024 elementli massivda ikkilik qidiruv eng yomon holatda taxminan nechta solishtirish talab qiladi?",
+      "options": ["1", "10", "32", "1024"],
+      "correctIndex": 1
     },
     {
       "id": 42,
@@ -365,15 +325,15 @@
     },
     {
       "id": 44,
-      "question": "Pythonda len(\"Hello\") ifodaning natijasi nechaga teng?",
-      "options": ["4", "5", "6", "\"Hello\""],
-      "correctIndex": 1
+      "question": "Pythondagi kod natijasi qancha boʻladi?\nprint(2 ** 3 ** 2)",
+      "options": ["64", "256", "512", "12"],
+      "correctIndex": 2
     },
     {
       "id": 45,
-      "question": "Pythonda 2 ** 3 ifoda natijasi?",
-      "options": ["6", "8", "5", "9"],
-      "correctIndex": 1
+      "question": "Pythondagi kod nima chiqaradi?\nx = 7\nprint(x // 2, x % 2)",
+      "options": ["3 1", "3.5 0", "4 1", "3 0"],
+      "correctIndex": 0
     },
     {
       "id": 46,
@@ -383,9 +343,9 @@
     },
     {
       "id": 47,
-      "question": "Pythonda 10 % 3 amal natijasi?",
-      "options": ["0", "1", "3", "10"],
-      "correctIndex": 1
+      "question": "Pythondagi kod nechta iteratsiyada toʻxtaydi (count qiymati)?\nn = 100\ncount = 0\nwhile n > 1:\n    n = n // 2\n    count += 1\nprint(count)",
+      "options": ["6", "7", "10", "100"],
+      "correctIndex": 0
     },
     {
       "id": 48,
@@ -467,39 +427,39 @@
     },
     {
       "id": 56,
-      "question": "C/C++ tillarida dasturning kirish funksiyasi qanday nomlanadi?",
-      "options": ["start()", "main()", "begin()", "run()"],
+      "question": "Pythondagi kod nima chiqaradi?\na, b = 1, 2\na, b = b, a + b\nprint(a, b)",
+      "options": ["1 2", "2 3", "3 2", "2 1"],
       "correctIndex": 1
     },
     {
       "id": 57,
-      "question": "Pythonda satrni butun songa oʻtkazuvchi funksiya?",
-      "options": ["int()", "str()", "float()", "bool()"],
-      "correctIndex": 0
+      "question": "Saralanmagan 1000 elementli massivda chiziqli qidiruv eng yomon holatda nechta solishtirish bajaradi?",
+      "options": ["10", "100", "500", "1000"],
+      "correctIndex": 3
     },
     {
       "id": 58,
-      "question": "Pythonda input() funksiyasi qaytargan qiymat qaysi turda boʻladi?",
-      "options": ["int", "float", "str", "bool"],
+      "question": "Pufakli saralash (bubble sort) algoritmi n = 10 elementda eng yomon holatda taxminan nechta solishtirish qiladi?",
+      "options": ["10", "20", "45", "100"],
       "correctIndex": 2
     },
     {
       "id": 59,
-      "question": "Boolean (mantiqiy) turda nechta qiymat boʻlishi mumkin?",
-      "options": ["1", "2", "3", "4"],
+      "question": "Quyidagi qoʻshma siklda print() chaqiruvi necha marta bajariladi?\nfor i in range(5):\n    for j in range(i):\n        print('*')",
+      "options": ["5", "10", "15", "25"],
       "correctIndex": 1
     },
     {
       "id": 60,
-      "question": "Mantiqiy ifoda: not False qiymati?",
-      "options": ["True", "False", "0", "None"],
-      "correctIndex": 0
+      "question": "Stek (stack) ga 1, 2, 3, 4 ketma-ketlikda qoʻyildi. Soʻngra 2 ta element pop qilindi. Endi stek tepasida qaysi son turibdi?",
+      "options": ["1", "2", "3", "4"],
+      "correctIndex": 1
     },
     {
       "id": 61,
-      "question": "Mantiqiy ifoda: True and False natijasi?",
-      "options": ["True", "False", "None", "1"],
-      "correctIndex": 1
+      "question": "Navbatga (queue) 5, 3, 8, 1 ketma-ketlikda qoʻyildi. Keyin 2 ta element olib chiqildi. Navbat boshida endi qaysi son turadi?",
+      "options": ["5", "3", "8", "1"],
+      "correctIndex": 2
     },
     {
       "id": 62,
@@ -509,9 +469,9 @@
     },
     {
       "id": 63,
-      "question": "Mantiqiy: True or False natijasi?",
-      "options": ["True", "False", "None", "Xato"],
-      "correctIndex": 0
+      "question": "Pythondagi kod nima chiqaradi?\ns = 0\nfor i in range(1, 11):\n    s += i\nprint(s)",
+      "options": ["45", "50", "55", "100"],
+      "correctIndex": 2
     },
     {
       "id": 64,
@@ -584,25 +544,15 @@
     },
     {
       "id": 73,
-      "question": "URL qisqartmasi nimani anglatadi?",
-      "options": [
-        "Uniform Resource Locator",
-        "Universal Random Link",
-        "User Read Link",
-        "Unique Resource Layer"
-      ],
+      "question": "Mantiqiy ifoda (True and False) or (not False) qiymati qancha?",
+      "options": ["True", "False", "None", "Xato"],
       "correctIndex": 0
     },
     {
       "id": 74,
-      "question": "Cookie (kuki) nima?",
-      "options": [
-        "Brauzer saqlaydigan kichik maʼlumot fayli",
-        "Virus turi",
-        "Antivirus dasturi",
-        "Tarmoq protokoli"
-      ],
-      "correctIndex": 0
+      "question": "Mantiqiy ifoda not (True and not False) qiymati qancha?",
+      "options": ["True", "False", "Xato", "None"],
+      "correctIndex": 1
     },
     {
       "id": 75,
@@ -712,20 +662,15 @@
     },
     {
       "id": 86,
-      "question": "Excel yacheykasidagi formula qaysi belgi bilan boshlanadi?",
-      "options": ["=", "+", "*", "!"],
-      "correctIndex": 0
+      "question": "5 ta turli rangli sharlardan 3 tasini chiziq boʻylab necha xil tartibda joylashtirish mumkin?",
+      "options": ["10", "15", "60", "120"],
+      "correctIndex": 2
     },
     {
       "id": 87,
-      "question": "DBMS qisqartmasi nimani anglatadi?",
-      "options": [
-        "Database Management System",
-        "Data Memory Service",
-        "Disk Manager System",
-        "Data Modular Structure"
-      ],
-      "correctIndex": 0
+      "question": "A, B, C, D toʻrtta harfini ketma-ket necha xil tartibda joylashtirish mumkin?",
+      "options": ["12", "16", "24", "120"],
+      "correctIndex": 2
     },
     {
       "id": 88,
@@ -774,20 +719,25 @@
     },
     {
       "id": 93,
-      "question": "HTMLda eng katta sarlavha qaysi teg bilan ifodalanadi?",
-      "options": ["<h1>", "<h6>", "<p>", "<title>"],
+      "question": "Agar \"Hamma talaba dasturchi\" va \"Aziz – talaba\" gaplari rost boʻlsa, qaysi xulosa albatta rost boʻladi?",
+      "options": [
+        "Aziz dasturchi",
+        "Aziz dasturchi emas",
+        "Aniqlash mumkin emas",
+        "Hech bir talaba dasturchi emas"
+      ],
       "correctIndex": 0
     },
     {
       "id": 94,
-      "question": "CSS qanday vazifani bajaradi?",
+      "question": "Mantiqiy XOR amali qachon rost (True) qiymatni qaytaradi?",
       "options": [
-        "Veb sahifaning koʻrinishi va uslublarini belgilaydi",
-        "Maʼlumotlar bazasini boshqaradi",
-        "Server bilan ulanadi",
-        "Kompilyatsiya qiladi"
+        "Ikkala operand ham rost boʻlganda",
+        "Ikkala operand ham yolgʻon boʻlganda",
+        "Faqat bitta operand rost boʻlganda",
+        "Hech qachon"
       ],
-      "correctIndex": 0
+      "correctIndex": 2
     },
     {
       "id": 95,
@@ -797,14 +747,9 @@
     },
     {
       "id": 96,
-      "question": "API qisqartmasi nimani anglatadi?",
-      "options": [
-        "Application Programming Interface",
-        "Automatic Process Integration",
-        "Advanced Program Input",
-        "Application Performance Index"
-      ],
-      "correctIndex": 0
+      "question": "8 nafar ishtirokchi har biri bilan bir martadan qoʻl berishadi. Jami nechta qoʻl berish boʻladi?",
+      "options": ["8", "16", "28", "56"],
+      "correctIndex": 2
     },
     {
       "id": 97,
@@ -819,14 +764,9 @@
     },
     {
       "id": 98,
-      "question": "Ada Lovelace tarixda nimasi bilan mashhur boʻlgan?",
-      "options": [
-        "Dunyodagi birinchi dasturchi (ayol) hisoblanadi",
-        "Birinchi virusni yaratgan",
-        "Birinchi tarmoqni yaratgan",
-        "Birinchi monitorni ixtiro qilgan"
-      ],
-      "correctIndex": 0
+      "question": "Tangani 3 marta tashlaganda kamida bir marta \"gerb\" tushishi ehtimoli qancha?",
+      "options": ["1/8", "3/8", "7/8", "1"],
+      "correctIndex": 2
     },
     {
       "id": 99,

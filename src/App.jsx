@@ -46,7 +46,7 @@ function Brand() {
         className="brand-logo"
       />
       <h1 className="brand-title">
-        O'qituvchilar kompetentligini tekshirish sayti
+        Pedagoglarning kasbiy malakasini davlat baholash markazi
       </h1>
     </div>
   );
