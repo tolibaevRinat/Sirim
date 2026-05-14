@@ -3,792 +3,807 @@
   "subject": "Informatika",
   "grade": "Oʻqituvchilar uchun (kompetentlik darajasi)",
   "language": "uz",
-  "note": "Pedagogning kasbiy va mantiqiy malakasini baholashga moʻljallangan testlar. Sanoq tizimlari boʻyicha mantiqiy topshiriqlar, kod tahlili (trassirovka), algoritmlar va kombinatorika asosidagi savollar.",
+  "note": "Pedagogning mantiqiy fikrlash qobiliyatini baholashga moʻljallangan testlar. Bul algebrasi, mantiqiy amallar va ifodalarni soddalashtirish, implikatsiya va ekvivalentsiya, mantiqiy xulosa chiqarish (modus ponens, modus tollens, silogizmlar), predikatlar va kvantorlar, bitli amallar hamda mantiqiy bosh qotirmalar (ritsarlar va yolgʻonchilar, oʻlchash, oʻtish masalalari) boʻyicha topshiriqlar.",
   "questions": [
     {
       "id": 1,
-      "question": "Ikkilik sanoq tizimidagi 110101₂ sonining oʻnlik qiymati nechaga teng?",
-      "options": ["49", "51", "53", "55"],
-      "correctIndex": 2
+      "question": "A=1, B=0 boʻlsa, A∧B (konyunksiya) qiymati nechaga teng?",
+      "options": ["0", "1", "A", "B"],
+      "correctIndex": 0
     },
     {
       "id": 2,
-      "question": "Oʻnlik 255 sonining oʻn oltilik (16-lik) yozuvi qanday?",
-      "options": ["FF", "EE", "F0", "100"],
-      "correctIndex": 0
+      "question": "A=1, B=0 boʻlsa, A∨B (dizyunksiya) qiymati nechaga teng?",
+      "options": ["0", "1", "A∧B", "A∧¬B"],
+      "correctIndex": 1
     },
     {
       "id": 3,
-      "question": "Oʻn oltilik 2A₁₆ sonining oʻnlik qiymati?",
-      "options": ["26", "42", "44", "52"],
-      "correctIndex": 1
+      "question": "¬1 (birning inkori) qiymati nechaga teng?",
+      "options": ["0", "1", "A", "Aniqlanmagan"],
+      "correctIndex": 0
     },
     {
       "id": 4,
-      "question": "Qaysi sanoq tizimida 2 + 2 = 11 tenglik oʻrinli boʻladi?",
-      "options": ["2-lik", "3-lik", "4-lik", "5-lik"],
-      "correctIndex": 1
+      "question": "A=1, B=1 boʻlsa, A⊕B (istisno YOKI, XOR) qiymati nechaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 0
     },
     {
       "id": 5,
-      "question": "1 + 1 = 10 ifodasi qaysi sanoq tizimlarida toʻgʻri boʻladi?",
-      "options": ["Faqat 2-lik tizimda", "Faqat 10-lik tizimda", "Asosi 2 dan kichik tizimlarda", "Asosi 2 yoki undan katta har qanday tizimda"],
-      "correctIndex": 3
+      "question": "A∧B konyunksiya ifoda qachon rost (1) qiymatga ega boʻladi?",
+      "options": [
+        "A va B ikkalasi ham rost boʻlganda",
+        "Kamida bittasi rost boʻlganda",
+        "Faqat A rost boʻlganda",
+        "Hech qachon"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 6,
-      "question": "10 bitda nechta turli qiymatni ifodalash mumkin?",
-      "options": ["256", "512", "1024", "2048"],
-      "correctIndex": 2
+      "question": "A∨B dizyunksiya ifoda qachon yolgʻon (0) qiymatga ega boʻladi?",
+      "options": [
+        "Ikkalasi ham rost boʻlganda",
+        "Ikkalasi ham yolgʻon boʻlganda",
+        "Faqat A yolgʻon boʻlganda",
+        "Hech qachon"
+      ],
+      "correctIndex": 1
     },
     {
       "id": 7,
-      "question": "Oʻn oltilik F₁₆ × 10₁₆ ifoda natijasi qaysi?",
-      "options": ["F0₁₆", "FF₁₆", "100₁₆", "1F0₁₆"],
-      "correctIndex": 0
-    },
-    {
-      "id": 8,
-      "question": "Qaysi sanoq tizimida (asosi b) \"13\" yozuvi oʻnlikdagi 7 ga teng boʻladi?",
-      "options": ["b = 3", "b = 4", "b = 5", "b = 6"],
-      "correctIndex": 1
-    },
-    {
-      "id": 9,
-      "question": "1024 ta turli rangni kodlash uchun har bir pikselga kamida necha bit kerak?",
-      "options": ["8", "10", "11", "16"],
-      "correctIndex": 1
-    },
-    {
-      "id": 10,
-      "question": "Ikkilik 1011₂ + 0011₂ ifodaning natijasi?",
-      "options": ["1100", "1110", "1111", "10001"],
-      "correctIndex": 1
-    },
-    {
-      "id": 11,
-      "question": "Ikkilik 1001₂ × 11₂ amalining natijasi?",
-      "options": ["11011", "10011", "11001", "10111"],
-      "correctIndex": 0
-    },
-    {
-      "id": 12,
-      "question": "Oʻn oltilik 100₁₆ sonining oʻnlik qiymati?",
-      "options": ["100", "128", "256", "512"],
+      "question": "Ikki argumentli mantiqiy funksiya uchun rostlik jadvalida nechta satr boʻladi?",
+      "options": ["2", "3", "4", "8"],
       "correctIndex": 2
     },
     {
-      "id": 13,
-      "question": "Quyidagi yozuvlardan eng katta sonni belgilang.",
-      "options": ["100₂", "100₈", "100₁₀", "100₁₆"],
+      "id": 8,
+      "question": "Uch argumentli mantiqiy funksiya uchun rostlik jadvalida nechta satr boʻladi?",
+      "options": ["4", "6", "8", "16"],
+      "correctIndex": 2
+    },
+    {
+      "id": 9,
+      "question": "n argumentli mantiqiy funksiyaning rostlik jadvalida necha satr boʻladi?",
+      "options": ["n", "2n", "n²", "2ⁿ"],
       "correctIndex": 3
     },
     {
+      "id": 10,
+      "question": "n argumentli har xil mantiqiy funksiyalar soni nechta?",
+      "options": ["2ⁿ", "n²", "2^(2ⁿ)", "n!"],
+      "correctIndex": 2
+    },
+    {
+      "id": 11,
+      "question": "A⊕B (XOR, istisno YOKI) qachon rost qiymat oladi?",
+      "options": [
+        "A va B teng qiymatda boʻlganda",
+        "A va B turli qiymatda boʻlganda",
+        "Ikkalasi ham rost boʻlganda",
+        "Ikkalasi ham yolgʻon boʻlganda"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 12,
+      "question": "A=1, B=0, C=1 boʻlsa, (A∧B)∨C ifoda qiymati nechaga teng?",
+      "options": ["0", "1", "A", "A∧C"],
+      "correctIndex": 1
+    },
+    {
+      "id": 13,
+      "question": "A=1, B=1, C=0 boʻlsa, A∧(B∨C) ifoda qiymati nechaga teng?",
+      "options": ["0", "1", "¬A", "B∧C"],
+      "correctIndex": 1
+    },
+    {
       "id": 14,
-      "question": "Oʻn oltilik 1F₁₆ + A₁₆ ifoda natijasi qaysi?",
-      "options": ["19", "29", "2A", "9A"],
+      "question": "De Morgan qonuniga koʻra ¬(A∧B) ifoda qaysi ifodaga teng kuchli?",
+      "options": ["¬A∧¬B", "¬A∨¬B", "A∨B", "A∧B"],
       "correctIndex": 1
     },
     {
       "id": 15,
-      "question": "1025 ta turli belgini kodlash uchun kamida necha bit kerak?",
-      "options": ["10", "11", "12", "16"],
+      "question": "De Morgan qonuniga koʻra ¬(A∨B) ifoda qaysi ifodaga teng kuchli?",
+      "options": ["¬A∨¬B", "¬A∧¬B", "A∧B", "¬A"],
       "correctIndex": 1
     },
     {
       "id": 16,
-      "question": "Ikkilik tizimda 11₂ × 11₂ koʻpaytmaning natijasi qaysi?",
-      "options": ["100₂", "110₂", "1001₂", "1100₂"],
-      "correctIndex": 2
-    },
-    {
-      "id": 17,
-      "question": "BIOS/UEFI dasturi odatda qaysi qurilmada saqlanadi?",
-      "options": [
-        "Qattiq disk (HDD) da",
-        "Operativ xotira (RAM) da",
-        "Ona platadagi flesh chip (ROM/Flash) da",
-        "Protsessor registrida"
-      ],
-      "correctIndex": 2
-    },
-    {
-      "id": 18,
-      "question": "Pythondagi quyidagi kod nima chiqaradi?\nx = 5\ny = x\nx = 10\nprint(y)",
-      "options": ["5", "10", "0", "Xato"],
-      "correctIndex": 0
-    },
-    {
-      "id": 19,
-      "question": "Protsessor takti chastotasi (GHz) nimani bildiradi?",
-      "options": [
-        "Quvvat sarfini",
-        "Bir sekunddagi takt sikllar sonini",
-        "Xotira hajmini",
-        "Ekran oʻlchamini"
-      ],
+      "question": "A=0, B=1 boʻlsa, ¬A∧B ifoda qiymati nechaga teng?",
+      "options": ["0", "1", "A", "B"],
       "correctIndex": 1
     },
     {
+      "id": 17,
+      "question": "(1∧0)∨(1∧1) ifoda qiymati nechaga teng?",
+      "options": ["0", "1", "2", "Aniqlanmagan"],
+      "correctIndex": 1
+    },
+    {
+      "id": 18,
+      "question": "Idempotentlik qonuniga koʻra A∧A ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 2
+    },
+    {
+      "id": 19,
+      "question": "Idempotentlik qonuniga koʻra A∨A ifoda nimaga teng?",
+      "options": ["0", "1", "A", "2A"],
+      "correctIndex": 2
+    },
+    {
       "id": 20,
-      "question": "Pythondagi quyidagi sikl nima chiqaradi?\nfor i in range(3):\n    print(i, end=' ')",
-      "options": ["0 1 2", "1 2 3", "0 1 2 3", "1 2"],
+      "question": "Ziddiyat qonuni A∧¬A ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
       "correctIndex": 0
     },
     {
       "id": 21,
-      "question": "SSD HDD ga nisbatan qanday afzalliklarga ega?",
-      "options": [
-        "Mexanik qismli boʻlgani uchun arzon",
-        "Tezroq va mexanik qismlarga ega emas",
-        "Sekinroq, ammo katta hajmli",
-        "Eskirgan texnologiya"
-      ],
+      "question": "Uchinchini istisno qonuni A∨¬A ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
       "correctIndex": 1
     },
     {
       "id": 22,
-      "question": "Pythondagi kod natijasi qanday boʻladi?\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(len(a))",
-      "options": ["3", "4", "0", "Xato"],
-      "correctIndex": 1
+      "question": "A∧1 ifoda nimaga teng (birlik qonuni)?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 2
     },
     {
       "id": 23,
-      "question": "Magistral (shina) tushunchasi nimani bildiradi?",
-      "options": [
-        "Maʼlumot uzatish yoʻlini",
-        "Quvvat manbaini",
-        "Xotira turini",
-        "Operatsion tizim qismini"
-      ],
-      "correctIndex": 0
+      "question": "A∨1 ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 1
     },
     {
       "id": 24,
-      "question": "Pythonda 2 + 3 * 4 - 1 ifoda qaysi qiymatga teng?",
-      "options": ["19", "13", "16", "20"],
-      "correctIndex": 1
+      "question": "A∧0 ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 0
     },
     {
       "id": 25,
-      "question": "Kompilyator interpretator dan qanday farq qiladi?",
-      "options": [
-        "Kompilyator kodni satrma-satr bajaradi",
-        "Kompilyator butun kodni bir vaqtda mashina tiliga oʻtkazadi",
-        "Ular bir xil",
-        "Interpretator kodni mashina kodiga oʻgiradi"
-      ],
-      "correctIndex": 1
+      "question": "A∨0 ifoda nimaga teng (nol qonuni)?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 2
     },
     {
       "id": 26,
-      "question": "RAM va ROM oʻrtasidagi asosiy farq qanday?",
-      "options": [
-        "RAM doimiy, ROM oʻzgaruvchan",
-        "RAM oʻzgaruvchan/vaqtinchalik, ROM doimiy",
-        "Hech qanday farq yoʻq",
-        "ROM faqat tashqi xotira"
-      ],
-      "correctIndex": 1
+      "question": "Ikki marta inkor qonuni ¬(¬A) nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 2
     },
     {
       "id": 27,
-      "question": "Pythondagi kod nima chiqaradi?\ns = 'salom'\nprint(s[::-1])",
-      "options": ["salom", "molas", "s", "Xato"],
+      "question": "Yutilish qonuniga koʻra A∨(A∧B) ifoda nimaga teng?",
+      "options": ["A∧B", "A", "B", "A∨B"],
       "correctIndex": 1
     },
     {
       "id": 28,
-      "question": "Pufakli saralashning (bubble sort) eng yomon holatdagi vaqt murakkabligi?",
-      "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
-      "correctIndex": 2
+      "question": "Yutilish qonuniga koʻra A∧(A∨B) ifoda nimaga teng?",
+      "options": ["A", "B", "A∧B", "A∨B"],
+      "correctIndex": 0
     },
     {
       "id": 29,
-      "question": "Tez saralashning (quick sort) oʻrtacha vaqt murakkabligi?",
-      "options": ["O(n²)", "O(n log n)", "O(n)", "O(1)"],
-      "correctIndex": 1
+      "question": "Distributivlik qonuniga koʻra A∧(B∨C) ifoda nimaga teng?",
+      "options": [
+        "(A∧B)∨(A∧C)",
+        "(A∨B)∧(A∨C)",
+        "A∨(B∧C)",
+        "A∧B∧C"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 30,
-      "question": "Ikkilik qidiruv (binary search) algoritmining vaqt murakkabligi?",
-      "options": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
-      "correctIndex": 1
+      "question": "Distributivlik qonuniga koʻra A∨(B∧C) ifoda nimaga teng?",
+      "options": [
+        "(A∨B)∧(A∨C)",
+        "(A∧B)∨(A∧C)",
+        "A∧B∧C",
+        "A∨B∨C"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 31,
-      "question": "Ikkilik qidiruv qanday massivda toʻgʻri ishlaydi?",
+      "question": "¬(A∧B∧C) ifoda Bul algebrasida qaysi ifodaga teng kuchli?",
       "options": [
-        "Saralanmagan",
-        "Saralangan",
-        "Boʻsh massivda",
-        "Faqat satrli massivda"
+        "¬A∧¬B∧¬C",
+        "¬A∨¬B∨¬C",
+        "A∨B∨C",
+        "(A∧B)∨C"
       ],
       "correctIndex": 1
     },
     {
       "id": 32,
-      "question": "Stek (Stack) maʼlumot strukturasi qaysi tamoyilga asoslangan?",
-      "options": ["FIFO", "LIFO", "Tasodifiy", "Saralangan"],
+      "question": "¬(A∨B∨C) ifoda qaysi ifodaga teng kuchli?",
+      "options": [
+        "¬A∨¬B∨¬C",
+        "¬A∧¬B∧¬C",
+        "A∧B∧C",
+        "0"
+      ],
       "correctIndex": 1
     },
     {
       "id": 33,
-      "question": "Navbat (Queue) qaysi tamoyilga asoslangan?",
-      "options": ["LIFO", "FIFO", "Tasodifiy", "Saralangan"],
-      "correctIndex": 1
+      "question": "(A∧B)∨(A∧¬B) ifoda soddalashtirilsa nimaga teng?",
+      "options": ["A", "B", "A∧B", "A∨B"],
+      "correctIndex": 0
     },
     {
       "id": 34,
-      "question": "Quyidagi rekursiv funksiya f(4) chaqirilganda qaysi qiymatni qaytaradi?\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 1)",
-      "options": ["4", "10", "24", "120"],
-      "correctIndex": 2
+      "question": "(A∨B)∧(A∨¬B) ifoda soddalashtirilsa nimaga teng?",
+      "options": ["A", "B", "¬A", "A∧B"],
+      "correctIndex": 0
     },
     {
       "id": 35,
-      "question": "Daraxt (tree) strukturasida \"ildiz\" (root) nima?",
+      "question": "A→B implikatsiya qachon yolgʻon qiymat oladi?",
       "options": [
-        "Eng pastki barg",
-        "Eng yuqori (boshlangʻich) tugun",
-        "Yon tarmoq",
-        "Tashqi element"
+        "A=1, B=1 boʻlganda",
+        "A=1, B=0 boʻlganda",
+        "A=0, B=1 boʻlganda",
+        "A=0, B=0 boʻlganda"
       ],
       "correctIndex": 1
     },
     {
       "id": 36,
-      "question": "Pythondagi kod nima chiqaradi?\nprint(len('hello world'))",
-      "options": ["10", "11", "12", "5"],
+      "question": "A=0 boʻlganda A→B implikatsiya qaysi qiymatga ega boʻladi?",
+      "options": ["0", "1", "B ga teng", "Aniqlanmagan"],
       "correctIndex": 1
     },
     {
       "id": 37,
-      "question": "Algoritm samaradorligi asosan qaysi koʻrsatkichlar boʻyicha baholanadi?",
-      "options": [
-        "Vaqt va xotira",
-        "Faqat satrlar soni",
-        "Rang va shrift",
-        "Faqat dastur uzunligi"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 38,
-      "question": "Chiziqli qidiruvning eng yomon vaqt murakkabligi qanday?",
-      "options": ["O(log n)", "O(n)", "O(n²)", "O(1)"],
+      "question": "A→B implikatsiya quyidagi ifodalardan qaysi biriga teng kuchli?",
+      "options": ["A∧B", "¬A∨B", "A∨¬B", "¬A∧B"],
       "correctIndex": 1
     },
     {
+      "id": 38,
+      "question": "A→B implikatsiyaning kontrapozitsiyasi qaysi?",
+      "options": ["B→A", "¬A→¬B", "¬B→¬A", "A→¬B"],
+      "correctIndex": 2
+    },
+    {
       "id": 39,
-      "question": "Tanlash bilan saralash (selection sort) murakkabligi?",
-      "options": ["O(n²)", "O(n log n)", "O(log n)", "O(1)"],
-      "correctIndex": 0
+      "question": "¬(A→B) implikatsiyaning inkori qaysi ifodaga teng kuchli?",
+      "options": ["¬A∧¬B", "A∧¬B", "¬A∨B", "A→¬B"],
+      "correctIndex": 1
     },
     {
       "id": 40,
-      "question": "Xesh-jadval (hash table) ning asosiy afzalligi nimada?",
+      "question": "A↔B ekvivalentsiya qachon rost qiymatga ega boʻladi?",
       "options": [
-        "Doim saralangan",
-        "Oʻrtacha O(1) vaqtda kirish imkoni",
-        "Eng sekin maʼlumotlar tuzilmasi",
-        "Faqat sonlar uchun ishlaydi"
+        "A va B turli qiymatda boʻlganda",
+        "A va B bir xil qiymatda boʻlganda",
+        "Faqat A rost boʻlganda",
+        "Hech qachon"
       ],
       "correctIndex": 1
     },
     {
       "id": 41,
-      "question": "Saralangan 1024 elementli massivda ikkilik qidiruv eng yomon holatda taxminan nechta solishtirish talab qiladi?",
-      "options": ["1", "10", "32", "1024"],
-      "correctIndex": 1
+      "question": "A↔B ekvivalentsiya ifoda qaysi ifodaga teng kuchli?",
+      "options": [
+        "(A→B)∧(B→A)",
+        "A∧B",
+        "A∨B",
+        "A⊕B"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 42,
-      "question": "NP-toʻliq (NP-complete) masala nima degani?",
-      "options": [
-        "Polinomial vaqtda oson yechiluvchi masala",
-        "Hozirgacha polinomial vaqtda yechilmagan, ammo yechimini tekshirish oson masala",
-        "Umuman yechilmaydigan masala",
-        "Faqat yengil masala"
-      ],
-      "correctIndex": 1
+      "question": "A→A ifoda har doim qaysi qiymatga ega?",
+      "options": ["A", "¬A", "0", "1"],
+      "correctIndex": 3
     },
     {
       "id": 43,
-      "question": "Lokal oʻzgaruvchi qaerda \"yashaydi\"?",
-      "options": [
-        "Faqat eʼlon qilingan funksiya/blok ichida",
-        "Butun dasturda",
-        "Faqat fayl tashqarisida",
-        "Internetda"
-      ],
+      "question": "A→(B→A) ifoda har doim qaysi qiymatga ega?",
+      "options": ["1 (tavtologiya)", "0 (ziddiyat)", "A ga teng", "B ga teng"],
       "correctIndex": 0
     },
     {
       "id": 44,
-      "question": "Pythondagi kod natijasi qancha boʻladi?\nprint(2 ** 3 ** 2)",
-      "options": ["64", "256", "512", "12"],
-      "correctIndex": 2
+      "question": "\"Agar yomgʻir yogʻsa, yer xoʻl boʻladi\" — yer xoʻl boʻlmaganini bilsak, qaysi xulosa toʻgʻri?",
+      "options": [
+        "Yomgʻir yogʻgan",
+        "Yomgʻir yogʻmagan",
+        "Aniq xulosa chiqarib boʻlmaydi",
+        "Yomgʻir yogʻishi mumkin edi"
+      ],
+      "correctIndex": 1
     },
     {
       "id": 45,
-      "question": "Pythondagi kod nima chiqaradi?\nx = 7\nprint(x // 2, x % 2)",
-      "options": ["3 1", "3.5 0", "4 1", "3 0"],
-      "correctIndex": 0
-    },
-    {
-      "id": 46,
-      "question": "Pythonda 10 // 3 amal natijasi?",
-      "options": ["3.33", "3", "4", "1"],
-      "correctIndex": 1
-    },
-    {
-      "id": 47,
-      "question": "Pythondagi kod nechta iteratsiyada toʻxtaydi (count qiymati)?\nn = 100\ncount = 0\nwhile n > 1:\n    n = n // 2\n    count += 1\nprint(count)",
-      "options": ["6", "7", "10", "100"],
-      "correctIndex": 0
-    },
-    {
-      "id": 48,
-      "question": "Pythonda roʻyxat (list) qanday yaratiladi?",
+      "question": "\"Agar P boʻlsa, Q boʻladi\" — Q rost boʻlsa, P haqida qanday xulosa chiqarish mumkin?",
       "options": [
-        "lst = (1, 2, 3)",
-        "lst = {1, 2, 3}",
-        "lst = [1, 2, 3]",
-        "lst = <1, 2, 3>"
+        "P albatta rost",
+        "P albatta yolgʻon",
+        "P haqida aniq xulosa chiqarib boʻlmaydi",
+        "P=Q"
       ],
       "correctIndex": 2
     },
     {
-      "id": 49,
-      "question": "Pythonda lugʻat (dict) ga toʻgʻri misol qaysi?",
-      "options": ["{\"a\": 1}", "[1, 2]", "(1, 2)", "<a: 1>"],
+      "id": 46,
+      "question": "A→B rost va A rost ekani maʼlum. B haqida nima deyish mumkin?",
+      "options": ["B rost", "B yolgʻon", "Aniqlanmagan", "B=A"],
       "correctIndex": 0
     },
     {
-      "id": 50,
-      "question": "Pythonda 0 dan 9 gacha sonlarni chiqaruvchi sikl qanday yoziladi?",
+      "id": 47,
+      "question": "A→B rost va B yolgʻon ekani maʼlum. A haqida nima deyish mumkin?",
+      "options": ["A rost", "A yolgʻon", "Aniqlanmagan", "A=B"],
+      "correctIndex": 1
+    },
+    {
+      "id": 48,
+      "question": "\"Hamma talabalar imtihon topshirdi\" gapining mantiqiy inkori qaysi?",
       "options": [
-        "for i = 1 to 10",
-        "for i in range(10):",
-        "for(i=0; i<10; i++)",
-        "foreach i in 10"
+        "Hech bir talaba imtihon topshirmadi",
+        "Kamida bitta talaba imtihon topshirmadi",
+        "Hamma talabalar imtihonga kelmadi",
+        "Faqat bitta talaba topshirdi"
       ],
       "correctIndex": 1
     },
     {
-      "id": 51,
-      "question": "Pythonda shart operatori sintaksisi qaysi?",
+      "id": 49,
+      "question": "A→B rost va B rost boʻlsa, A qaysi qiymatda boʻlishi mumkin?",
       "options": [
-        "if x > 0:",
-        "if (x > 0) then",
-        "if x > 0 begin",
-        "if x > 0 ->"
+        "Albatta rost",
+        "Albatta yolgʻon",
+        "Rost yoki yolgʻon (aniqlanmagan)",
+        "Faqat 0"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 50,
+      "question": "A=0 va B=1 boʻlsa, (A→B)→A ifoda qaysi qiymatga ega?",
+      "options": ["0", "1", "A", "B"],
+      "correctIndex": 0
+    },
+    {
+      "id": 51,
+      "question": "A→B va B→C rost boʻlsa, qaysi xulosa toʻgʻri?",
+      "options": [
+        "A→C rost (tranzitivlik)",
+        "C→A rost",
+        "A↔C rost",
+        "Hech qanday xulosa chiqib boʻlmaydi"
       ],
       "correctIndex": 0
     },
     {
       "id": 52,
-      "question": "Pascalda for sikli sintaksisi qaysi?",
+      "question": "Silogizm: \"Hamma odamlar oʻladi. Sokrat — odam.\" Qaysi xulosa toʻgʻri?",
       "options": [
-        "for i in range(10)",
-        "for i := 1 to 10 do",
-        "for(i=0; i<10; i++)",
-        "foreach i"
+        "Sokrat oʻladi",
+        "Sokrat oʻlmaydi",
+        "Aniqlanmagan",
+        "Sokrat odam emas"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": 53,
-      "question": "Pascalda if operatorining toʻgʻri koʻrinishi?",
+      "question": "Modus ponens qoidasi qaysi?",
       "options": [
-        "if x > 0 then ... else ...",
-        "if (x > 0) { ... }",
-        "if x > 0:",
-        "if x then end"
+        "A va A→B dan B kelib chiqadi",
+        "A→B va ¬B dan ¬A kelib chiqadi",
+        "A∨B va ¬A dan B kelib chiqadi",
+        "A va B dan A∧B kelib chiqadi"
       ],
       "correctIndex": 0
     },
     {
       "id": 54,
-      "question": "Pascalda massivni eʼlon qilish toʻgʻri koʻrinishi?",
+      "question": "Modus tollens qoidasi qaysi?",
       "options": [
-        "var a: array[1..10] of integer;",
-        "var a[10]: int;",
-        "int a[10];",
-        "array a 10;"
+        "A va A→B dan B",
+        "A→B va ¬B dan ¬A",
+        "A→B va B dan A",
+        "A∧B dan A"
       ],
-      "correctIndex": 0
+      "correctIndex": 1
     },
     {
       "id": 55,
-      "question": "Pascalda matn satrini ulash (konkatenatsiya) belgisi?",
-      "options": ["+", "&", ".", ","],
+      "question": "Dizyunktiv silogizm qoidasi qaysi?",
+      "options": [
+        "A∨B va ¬A dan B kelib chiqadi",
+        "A∧B va ¬A dan B kelib chiqadi",
+        "A→B va A dan B kelib chiqadi",
+        "A∨B dan A va B kelib chiqadi"
+      ],
       "correctIndex": 0
     },
     {
       "id": 56,
-      "question": "Pythondagi kod nima chiqaradi?\na, b = 1, 2\na, b = b, a + b\nprint(a, b)",
-      "options": ["1 2", "2 3", "3 2", "2 1"],
-      "correctIndex": 1
+      "question": "A→B rost va A yolgʻon. B haqida qaysi xulosa toʻgʻri?",
+      "options": [
+        "B rost",
+        "B yolgʻon",
+        "Aniqlanmagan",
+        "A va B teng"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 57,
-      "question": "Saralanmagan 1000 elementli massivda chiziqli qidiruv eng yomon holatda nechta solishtirish bajaradi?",
-      "options": ["10", "100", "500", "1000"],
-      "correctIndex": 3
+      "question": "\"A→B rost, B rost ⇒ A rost\" — bu xulosa toʻgʻrimi?",
+      "options": [
+        "Har doim toʻgʻri",
+        "Notoʻgʻri (umuman olganda) — bu xato xulosa",
+        "Faqat A=0 boʻlganda toʻgʻri",
+        "Faqat B=0 boʻlganda toʻgʻri"
+      ],
+      "correctIndex": 1
     },
     {
       "id": 58,
-      "question": "Pufakli saralash (bubble sort) algoritmi n = 10 elementda eng yomon holatda taxminan nechta solishtirish qiladi?",
-      "options": ["10", "20", "45", "100"],
+      "question": "\"Barcha musichalar — qush. Bu hayvon — musicha emas.\" Qaysi xulosa toʻgʻri?",
+      "options": [
+        "Bu hayvon — qush",
+        "Bu hayvon — qush emas",
+        "Hech qanday aniq xulosa chiqarib boʻlmaydi",
+        "Bu hayvon — musicha"
+      ],
       "correctIndex": 2
     },
     {
       "id": 59,
-      "question": "Quyidagi qoʻshma siklda print() chaqiruvi necha marta bajariladi?\nfor i in range(5):\n    for j in range(i):\n        print('*')",
-      "options": ["5", "10", "15", "25"],
-      "correctIndex": 1
+      "question": "P→Q rost va ¬P rost. Q haqida nima xulosa chiqarish mumkin?",
+      "options": [
+        "Q rost",
+        "Q yolgʻon",
+        "Q aniqlanmagan",
+        "Q=P"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 60,
-      "question": "Stek (stack) ga 1, 2, 3, 4 ketma-ketlikda qoʻyildi. Soʻngra 2 ta element pop qilindi. Endi stek tepasida qaysi son turibdi?",
-      "options": ["1", "2", "3", "4"],
-      "correctIndex": 1
-    },
-    {
-      "id": 61,
-      "question": "Navbatga (queue) 5, 3, 8, 1 ketma-ketlikda qoʻyildi. Keyin 2 ta element olib chiqildi. Navbat boshida endi qaysi son turadi?",
-      "options": ["5", "3", "8", "1"],
-      "correctIndex": 2
-    },
-    {
-      "id": 62,
-      "question": "Ifoda: (5 > 3) and (3 == 3) natijasi?",
-      "options": ["True", "False", "Xato", "None"],
-      "correctIndex": 0
-    },
-    {
-      "id": 63,
-      "question": "Pythondagi kod nima chiqaradi?\ns = 0\nfor i in range(1, 11):\n    s += i\nprint(s)",
-      "options": ["45", "50", "55", "100"],
-      "correctIndex": 2
-    },
-    {
-      "id": 64,
-      "question": "IPv4 manzili nechta bitdan iborat?",
-      "options": ["16", "32", "64", "128"],
-      "correctIndex": 1
-    },
-    {
-      "id": 65,
-      "question": "IPv6 manzili nechta bitdan iborat?",
-      "options": ["32", "64", "128", "256"],
-      "correctIndex": 2
-    },
-    {
-      "id": 66,
-      "question": "HTTP protokoli standart holatda qaysi portda ishlaydi?",
-      "options": ["21", "25", "80", "443"],
-      "correctIndex": 2
-    },
-    {
-      "id": 67,
-      "question": "HTTPS protokoli qaysi portda ishlaydi?",
-      "options": ["80", "443", "8080", "23"],
-      "correctIndex": 1
-    },
-    {
-      "id": 68,
-      "question": "DNS xizmati nima vazifa bajaradi?",
+      "question": "Tavtologiya — bu qanday ifoda?",
       "options": [
-        "Domen nomini IP manziliga oʻtkazadi",
-        "Faylni saqlaydi",
-        "Antivirus tekshiruvi",
-        "Tarmoqni yoqadi"
+        "Har doim rost boʻluvchi ifoda",
+        "Har doim yolgʻon boʻluvchi ifoda",
+        "Faqat baʼzi qiymatlarda rost ifoda",
+        "Maʼnoga ega boʻlmagan ifoda"
       ],
       "correctIndex": 0
     },
     {
-      "id": 69,
-      "question": "FTP protokoli qaysi xizmat uchun moʻljallangan?",
+      "id": 61,
+      "question": "Ziddiyat (kontradiksiya) — bu qanday ifoda?",
       "options": [
-        "Fayl uzatish",
-        "Elektron pochta",
-        "Veb sahifa",
-        "Video aloqa"
+        "Har doim yolgʻon boʻluvchi ifoda",
+        "Har doim rost boʻluvchi ifoda",
+        "Argumentlar soniga bogʻliq ifoda",
+        "Maʼnosi noaniq ifoda"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 62,
+      "question": "Quyidagi ifodalardan qaysi biri tavtologiya?",
+      "options": ["A∧¬A", "A∨¬A", "A→¬A", "¬A∧A"],
+      "correctIndex": 1
+    },
+    {
+      "id": 63,
+      "question": "Quyidagi ifodalardan qaysi biri ziddiyat (har doim yolgʻon)?",
+      "options": ["A∨¬A", "A→A", "A∧¬A", "¬(A∧¬A)"],
+      "correctIndex": 2
+    },
+    {
+      "id": 64,
+      "question": "\"Yomgʻir yogʻyapti yoki quyosh chiqyapti. Yomgʻir yogʻmayapti.\" Qaysi xulosa toʻgʻri?",
+      "options": [
+        "Quyosh chiqyapti",
+        "Quyosh chiqmayapti",
+        "Aniqlanmagan",
+        "Yomgʻir yogʻyapti"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 65,
+      "question": "A→B va ¬A→B rost. B haqida nima deyish mumkin?",
+      "options": [
+        "B rost (har holatda)",
+        "B yolgʻon",
+        "Aniqlanmagan",
+        "B=A"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 66,
+      "question": "∀x P(x) ifodasining inkori qaysi?",
+      "options": ["∀x ¬P(x)", "∃x ¬P(x)", "¬∃x P(x)", "∃x P(x)"],
+      "correctIndex": 1
+    },
+    {
+      "id": 67,
+      "question": "∃x P(x) ifodasining inkori qaysi?",
+      "options": ["∃x ¬P(x)", "∀x ¬P(x)", "¬∀x P(x)", "∀x P(x)"],
+      "correctIndex": 1
+    },
+    {
+      "id": 68,
+      "question": "\"Barcha qushlar ucha oladi\" gapining mantiqiy inkori qaysi?",
+      "options": [
+        "Hech bir qush ucha olmaydi",
+        "Kamida bitta qush ucha olmaydi",
+        "Hamma qushlar ucha olmaydi",
+        "Baʼzi qushlar ucha oladi"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 69,
+      "question": "\"Baʼzi gullar qizil\" gapining mantiqiy inkori qaysi?",
+      "options": [
+        "Hech bir gul qizil emas",
+        "Hamma gullar qizil",
+        "Baʼzi gullar qizil emas",
+        "Faqat bitta gul qizil"
       ],
       "correctIndex": 0
     },
     {
       "id": 70,
-      "question": "SMTP protokoli qaysi vazifa uchun ishlatiladi?",
+      "question": "∀x ∃y P(x,y) ifodasi nimani bildiradi?",
       "options": [
-        "Veb sahifani koʻrish",
-        "Elektron pochta yuborish",
-        "Fayl yuklash",
-        "Chat aloqa"
+        "Har bir x uchun shunday y mavjudki, P(x,y) rost",
+        "Shunday x mavjudki, har bir y uchun P(x,y) rost",
+        "Hamma x va y uchun P(x,y) rost",
+        "Hech bir x va y uchun P(x,y) rost emas"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": 71,
-      "question": "TCP protokoli OSI modelining qaysi qatlamiga tegishli?",
-      "options": ["Fizik", "Tarmoq", "Transport", "Amaliy"],
-      "correctIndex": 2
+      "question": "¬∀x P(x) ifoda qaysi ifodaga teng kuchli?",
+      "options": ["∀x ¬P(x)", "∃x ¬P(x)", "¬∃x P(x)", "∃x P(x)"],
+      "correctIndex": 1
     },
     {
       "id": 72,
-      "question": "OSI modelida nechta qatlam mavjud?",
-      "options": ["5", "6", "7", "8"],
-      "correctIndex": 2
+      "question": "¬∃x (P(x)∧Q(x)) ifoda qaysi ifodaga teng kuchli?",
+      "options": [
+        "∀x (¬P(x)∨¬Q(x))",
+        "∃x (¬P(x)∧¬Q(x))",
+        "∀x (P(x)∧Q(x))",
+        "¬∀x (P(x)∨Q(x))"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 73,
-      "question": "Mantiqiy ifoda (True and False) or (not False) qiymati qancha?",
-      "options": ["True", "False", "None", "Xato"],
+      "question": "U={1,2,3} olamida ∀x∈U (x>0) gapi qaysi qiymatga ega?",
+      "options": ["Rost", "Yolgʻon", "Aniqlanmagan", "U ga bogʻliq"],
       "correctIndex": 0
     },
     {
       "id": 74,
-      "question": "Mantiqiy ifoda not (True and not False) qiymati qancha?",
-      "options": ["True", "False", "Xato", "None"],
+      "question": "U={1,2,3} olamida ∃x∈U (x>5) gapi qaysi qiymatga ega?",
+      "options": ["Rost", "Yolgʻon", "Aniqlanmagan", "x ga bogʻliq"],
       "correctIndex": 1
     },
     {
       "id": 75,
-      "question": "Asimmetrik kriptografiyada nechta kalit ishlatiladi?",
-      "options": ["1", "2", "3", "Cheksiz"],
-      "correctIndex": 1
+      "question": "\"Har bir butun son uchun undan katta butun son mavjud\" — bu fikrning formula koʻrinishi qaysi?",
+      "options": [
+        "∀x ∃y (y>x)",
+        "∃x ∀y (y>x)",
+        "∀x ∀y (y>x)",
+        "∃x ∃y (y>x)"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 76,
-      "question": "RSA qaysi turdagi shifrlash algoritmi?",
-      "options": ["Simmetrik", "Asimmetrik", "Xesh-funksiya", "Hech qaysi"],
+      "question": "\"Hamma talabalar imtihondan oʻtdi\" gapining inkori qaysi?",
+      "options": [
+        "Hamma talabalar imtihondan oʻtmadi",
+        "Kamida bitta talaba imtihondan oʻtmadi",
+        "Hech bir talaba imtihondan oʻtmadi",
+        "Faqat bitta talaba oʻtmadi"
+      ],
       "correctIndex": 1
     },
     {
       "id": 77,
-      "question": "Xesh-funksiya (hash) ning natijasi qanday xususiyatga ega?",
+      "question": "∀x (P(x)→Q(x)) va P(a) rost. Q(a) haqida nima deyish mumkin?",
       "options": [
-        "Oʻzgaruvchan uzunlikda",
-        "Doimiy (qatʼiy) uzunlikda",
-        "Faqat 0 va 1 dan iborat",
-        "Bosh boʻladi"
-      ],
-      "correctIndex": 1
-    },
-    {
-      "id": 78,
-      "question": "Fishing (phishing) hujumi nima?",
-      "options": [
-        "Yangi turdagi virus",
-        "Yolgʻon saytlar yoki xabarlar orqali maʼlumot oʻgʻirlash",
-        "Pochta turi",
-        "Brauzer kengaytmasi"
-      ],
-      "correctIndex": 1
-    },
-    {
-      "id": 79,
-      "question": "Firewall (xavfsizlik devori) ning asosiy vazifasi?",
-      "options": [
-        "Tarmoq trafigini filtr orqali nazorat qiladi",
-        "Faylni saqlaydi",
-        "Hujjatlarni chop etadi",
-        "Virus tarqatadi"
+        "Q(a) rost",
+        "Q(a) yolgʻon",
+        "Aniqlanmagan",
+        "Q(a)=P(a)"
       ],
       "correctIndex": 0
     },
     {
+      "id": 78,
+      "question": "5 va 3 sonlarining bitli AND amal natijasi (5 AND 3) nechaga teng?",
+      "options": ["1", "3", "7", "8"],
+      "correctIndex": 0
+    },
+    {
+      "id": 79,
+      "question": "5 va 3 sonlarining bitli OR amal natijasi (5 OR 3) nechaga teng?",
+      "options": ["1", "3", "7", "8"],
+      "correctIndex": 2
+    },
+    {
       "id": 80,
-      "question": "SQL-injection qanday turdagi hujum hisoblanadi?",
-      "options": [
-        "Tarmoq qatlami hujumi",
-        "Maʼlumotlar bazasiga qarshi hujum",
-        "Virus hujumi",
-        "Spam hujum"
-      ],
+      "question": "5 va 3 sonlarining bitli XOR amal natijasi (5 XOR 3) nechaga teng?",
+      "options": ["0", "6", "7", "8"],
       "correctIndex": 1
     },
     {
       "id": 81,
-      "question": "DDoS hujumining asosiy maqsadi nima?",
-      "options": [
-        "Maʼlumot oʻgʻirlash",
-        "Xizmatni inkor qildirish (server ishini buzish)",
-        "Virus yuqtirish",
-        "Spam yuborish"
-      ],
-      "correctIndex": 1
+      "question": "A XOR A ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 0
     },
     {
       "id": 82,
-      "question": "Excelda absolyut manzilni belgilash uchun qaysi belgi qoʻyiladi?",
-      "options": ["$", "%", "&", "#"],
-      "correctIndex": 0
+      "question": "A XOR 0 ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 2
     },
     {
       "id": 83,
-      "question": "Excelda VLOOKUP funksiyasi nima qiladi?",
-      "options": [
-        "Vertikal yoʻnalishda qidiruv amalga oshiradi",
-        "Yigʻindini hisoblaydi",
-        "Maksimal qiymatni topadi",
-        "Oʻrtacha qiymatni topadi"
-      ],
-      "correctIndex": 0
+      "question": "A XOR 1 ifoda nimaga teng?",
+      "options": ["0", "1", "A", "¬A"],
+      "correctIndex": 3
     },
     {
       "id": 84,
-      "question": "Excelda IF funksiyasining toʻgʻri sintaksisi?",
+      "question": "n sonining juftligini tekshirish uchun qaysi bitli amal foydali?",
       "options": [
-        "=IF(shart; rost qiymat; yolgʻon qiymat)",
-        "=IF(shart, ;, ;)",
-        "=IF(natija)",
-        "IF=> shart"
+        "n AND 1 (oxirgi bitni tekshirish)",
+        "n OR 1",
+        "n XOR 0",
+        "NOT n"
       ],
       "correctIndex": 0
     },
     {
       "id": 85,
-      "question": "Excelda COUNTIF funksiyasining vazifasi?",
-      "options": [
-        "Shartni qanoatlantiruvchi yacheykalar sonini sanaydi",
-        "Yigʻindini hisoblaydi",
-        "Oʻrtachani hisoblaydi",
-        "Maʼlumotni filtrlaydi"
-      ],
+      "question": "Toʻplamlardagi A∩B (kesishma) amal qaysi mantiqiy amalga mos keladi?",
+      "options": ["AND (∧)", "OR (∨)", "NOT (¬)", "XOR (⊕)"],
       "correctIndex": 0
     },
     {
       "id": 86,
-      "question": "5 ta turli rangli sharlardan 3 tasini chiziq boʻylab necha xil tartibda joylashtirish mumkin?",
-      "options": ["10", "15", "60", "120"],
-      "correctIndex": 2
+      "question": "Toʻplamlardagi A∪B (birlashma) amal qaysi mantiqiy amalga mos keladi?",
+      "options": ["AND", "OR", "NOT", "XOR"],
+      "correctIndex": 1
     },
     {
       "id": 87,
-      "question": "A, B, C, D toʻrtta harfini ketma-ket necha xil tartibda joylashtirish mumkin?",
-      "options": ["12", "16", "24", "120"],
+      "question": "Toʻplamlar uchun ¬(A∩B) = ¬A ∪ ¬B munosabati qaysi qonun nomidan keladi?",
+      "options": ["Yutilish", "Distributivlik", "De Morgan", "Assotsiativlik"],
       "correctIndex": 2
     },
     {
       "id": 88,
-      "question": "SQLda jadvaldan barcha qatorlarni tanlash uchun toʻgʻri soʻrov?",
-      "options": [
-        "SELECT * FROM table_name",
-        "GET ALL table_name",
-        "SHOW table_name",
-        "READ table_name"
-      ],
-      "correctIndex": 0
+      "question": "A={1,2,3}, B={2,3,4} boʻlsa, A∩B toʻplam qaysi?",
+      "options": ["{1,2,3,4}", "{2,3}", "{1,4}", "∅"],
+      "correctIndex": 1
     },
     {
       "id": 89,
-      "question": "SQLda jadvalga yangi yozuv qoʻshish operatori?",
-      "options": ["INSERT INTO", "UPDATE", "DELETE", "SELECT"],
-      "correctIndex": 0
+      "question": "A={1,2,3}, B={2,3,4} boʻlsa, A∪B toʻplam qaysi?",
+      "options": ["{2,3}", "{1,2,3,4}", "{1,4}", "∅"],
+      "correctIndex": 1
     },
     {
       "id": 90,
-      "question": "SQLda mavjud yozuvni oʻzgartirish operatori?",
-      "options": ["INSERT", "UPDATE", "ALTER", "MODIFY"],
-      "correctIndex": 1
+      "question": "n elementli toʻplamning qism toʻplamlari soni nechta?",
+      "options": ["n", "2n", "n²", "2ⁿ"],
+      "correctIndex": 3
     },
     {
       "id": 91,
-      "question": "Relyatsion bazada birlamchi kalit (PRIMARY KEY) nima vazifa bajaradi?",
+      "question": "8-bitli n sonning oxirgi bitini 1 ga oʻzgartirish uchun qaysi amal kerak?",
       "options": [
-        "Yozuvni yagona aniqlovchi maydon",
-        "Faqat raqamli maydon",
-        "Bekor qilish kaliti",
-        "Faqat sana maydoni"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 92,
-      "question": "Normallashtirish (normalization) ning maqsadi nima?",
-      "options": [
-        "Maʼlumotlar takrorlanishini kamaytirish va izchillikni taʼminlash",
-        "Bazani kichraytirish",
-        "Maʼlumotlarni shifrlash",
-        "Faqat tezlikni oshirish"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 93,
-      "question": "Agar \"Hamma talaba dasturchi\" va \"Aziz – talaba\" gaplari rost boʻlsa, qaysi xulosa albatta rost boʻladi?",
-      "options": [
-        "Aziz dasturchi",
-        "Aziz dasturchi emas",
-        "Aniqlash mumkin emas",
-        "Hech bir talaba dasturchi emas"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 94,
-      "question": "Mantiqiy XOR amali qachon rost (True) qiymatni qaytaradi?",
-      "options": [
-        "Ikkala operand ham rost boʻlganda",
-        "Ikkala operand ham yolgʻon boʻlganda",
-        "Faqat bitta operand rost boʻlganda",
-        "Hech qachon"
-      ],
-      "correctIndex": 2
-    },
-    {
-      "id": 95,
-      "question": "JavaScript faylining standart kengaytmasi qaysi?",
-      "options": [".js", ".py", ".pas", ".java"],
-      "correctIndex": 0
-    },
-    {
-      "id": 96,
-      "question": "8 nafar ishtirokchi har biri bilan bir martadan qoʻl berishadi. Jami nechta qoʻl berish boʻladi?",
-      "options": ["8", "16", "28", "56"],
-      "correctIndex": 2
-    },
-    {
-      "id": 97,
-      "question": "Bulutli (cloud) hisoblashning xizmat modellaridan biri?",
-      "options": [
-        "SaaS (Software as a Service)",
-        "HTTP",
-        "RAM",
-        "USB"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 98,
-      "question": "Tangani 3 marta tashlaganda kamida bir marta \"gerb\" tushishi ehtimoli qancha?",
-      "options": ["1/8", "3/8", "7/8", "1"],
-      "correctIndex": 2
-    },
-    {
-      "id": 99,
-      "question": "Alan Turing qaysi sohada katta hissa qoʻshgan?",
-      "options": [
-        "Geografiya",
-        "Informatika nazariyasi va algoritmlar",
-        "Tibbiyot",
-        "Biologiya"
+        "n AND 11111110",
+        "n OR 00000001",
+        "n XOR 11111111",
+        "NOT n"
       ],
       "correctIndex": 1
     },
     {
-      "id": 100,
-      "question": "Mashinaviy oʻrganishda (Machine Learning) \"oʻqitish\" (training) nima?",
+      "id": 92,
+      "question": "8-bitli n sonning oxirgi bitini 0 qilish uchun qaysi amal kerak?",
       "options": [
-        "Modelni tayyor maʼlumotlar asosida sozlash jarayoni",
-        "Faqat ekranni yoqish",
-        "Faqat virusdan tozalash",
-        "Faqat fayl saqlash"
+        "n OR 00000001",
+        "n AND 11111110",
+        "n XOR 1",
+        "NOT n"
       ],
-      "correctIndex": 0
+      "correctIndex": 1
+    },
+    {
+      "id": 93,
+      "question": "n sonini 2 ga koʻpaytirish uchun qaysi bit operatsiyasi mos keladi?",
+      "options": ["n>>1", "n<<1", "n AND 1", "n OR 1"],
+      "correctIndex": 1
+    },
+    {
+      "id": 94,
+      "question": "Musbat n sonni 2 ga butun boʻlish uchun qaysi bit operatsiyasi mos keladi?",
+      "options": ["n<<1", "n>>1", "n AND 0", "n OR 0"],
+      "correctIndex": 1
+    },
+    {
+      "id": 95,
+      "question": "n=12 sonining ikkilik koʻrinishida (1100₂) nechta 1 biti bor?",
+      "options": ["1", "2", "3", "4"],
+      "correctIndex": 1
+    },
+    {
+      "id": 96,
+      "question": "Ritsarlar (har doim rost gapiruvchilar) va yolgʻonchilar (har doim yolgʻon gapiruvchilar) orolida A va B uchradi. A: \"Biz ikkalamiz ham yolgʻonchimiz\" dedi. Ular kim?",
+      "options": [
+        "A — ritsar, B — yolgʻonchi",
+        "A — yolgʻonchi, B — ritsar",
+        "Ikkalasi ham ritsar",
+        "Ikkalasi ham yolgʻonchi"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 97,
+      "question": "Uchta savatda mevalar bor: birinchisida \"olma\", ikkinchisida \"nok\", uchinchisida \"olma va nok\" yorligʻi. Hammasi notoʻgʻri yopishtirilgan. Bitta savatdan bitta meva olib hammasini aniqlash mumkinmi?",
+      "options": [
+        "Mumkin emas",
+        "Mumkin — \"olma va nok\" yorligʻi bor savatdan olish kifoya",
+        "Faqat \"olma\" yorligʻi bor savatdan olish kerak",
+        "Faqat ikkita meva olsangina mumkin"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 98,
+      "question": "12 ta bir xil koʻrinishdagi tanga bor, ulardan biri qalbaki (vazni qolganlardan farq qiladi, ammo qaysi tomonga — nomaʼlum). Tarozi yordamida qalbaki tangani topish uchun kamida nechta oʻlchash kifoya?",
+      "options": ["2", "3", "4", "5"],
+      "correctIndex": 1
+    },
+    {
+      "id": 99,
+      "question": "Toʻrt kishi koʻprikdan oʻtishi kerak: A — 1 daq., B — 2 daq., C — 5 daq., D — 10 daqiqada oʻtadi. Koʻprikda bir vaqtda eng koʻp 2 kishi yura oladi, fonar bittada, juftlik tezligi sekinroqning vaqti boʻyicha hisoblanadi. Hammasi kamida necha daqiqada oʻtib oladi?",
+      "options": ["15", "16", "17", "19"],
+      "correctIndex": 2
+    },
+    {
+      "id": 100,
+      "question": "Oʻlchov belgilarisiz 3 litrli va 5 litrli idishlar bor, suv cheksiz. Aniq 4 litr suvni oʻlchab olish mumkinmi?",
+      "options": [
+        "Mumkin emas, chunki 4 ni faqat 3 va 5 dan tuzib boʻlmaydi",
+        "Mumkin (masalan, 5 litrlikni toʻldirib, 3 litrlikka quyib, qadamlar bilan)",
+        "Faqat 3 yoki 5 litrni oʻlchash mumkin",
+        "Faqat jami 8 litrgacha oʻlchash mumkin"
+      ],
+      "correctIndex": 1
     }
   ]
 }
