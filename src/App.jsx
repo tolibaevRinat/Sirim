@@ -26,7 +26,12 @@ function shuffle(array) {
 }
 
 function shuffleTest(test) {
-  const shuffled = shuffle(test.questions).map((q) => {
+  const pinnedTail = test.id === "test1" ? 10 : 0;
+  const tailStart = test.questions.length - pinnedTail;
+  const head = test.questions.slice(0, tailStart);
+  const tail = test.questions.slice(tailStart);
+  const reordered = [...shuffle(head), ...tail];
+  const shuffled = reordered.map((q) => {
     const order = shuffle([0, 1, 2, 3]);
     return {
       ...q,

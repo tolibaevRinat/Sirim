@@ -3,807 +3,752 @@
   "subject": "Informatika",
   "grade": "Oʻqituvchilar uchun (kompetentlik darajasi)",
   "language": "uz",
-  "note": "Pedagogning mantiqiy fikrlash qobiliyatini baholashga moʻljallangan testlar. Bul algebrasi, mantiqiy amallar va ifodalarni soddalashtirish, implikatsiya va ekvivalentsiya, mantiqiy xulosa chiqarish (modus ponens, modus tollens, silogizmlar), predikatlar va kvantorlar, bitli amallar hamda mantiqiy bosh qotirmalar (ritsarlar va yolgʻonchilar, oʻlchash, oʻtish masalalari) boʻyicha topshiriqlar.",
+  "note": "Bu test mantiqiy fikrlash qobiliyatini sinaydi. Savollar dasturlash va informatika muhitida joylashtirilgan mantiqiy masalalardir: dedukciya va sillogizmlar, ritsarlar va yolgʻonchilar jumboqlari, mantiqiy joylashtirishlar (kim qaysi tilda yozadi, qaysi serverda qaysi OS), sonli ketma-ketliklar. Oxirgi 10 ta savol eng asosiy mantiqiy amallarni (VA, YOKI, EMAS, XOR) sinab koʻradi.",
   "questions": [
     {
       "id": 1,
-      "question": "A=1, B=0 boʻlsa, A∧B (konyunksiya) qiymati nechaga teng?",
-      "options": ["0", "1", "A", "B"],
-      "correctIndex": 0
+      "question": "Tizimda bitta bot bor. Botlar yo har doim rost, yo har doim yolgʻon javob beradi. Bot dedi: \"Men yolgʻonchi botman\". Bunday vaziyat mumkinmi?",
+      "options": [
+        "Ha, u rost gapiruvchi bot",
+        "Ha, u yolgʻonchi bot",
+        "Bunday vaziyat mantiqan mumkin emas",
+        "Aniqlash mumkin emas"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 2,
-      "question": "A=1, B=0 boʻlsa, A∨B (dizyunksiya) qiymati nechaga teng?",
-      "options": ["0", "1", "A∧B", "A∧¬B"],
-      "correctIndex": 1
+      "question": "Uchta programmist — Ali, Vali, Soli — har biri bittadan tilda yozadi: Python, JavaScript, Go. Ali Pythonda yozmaydi. Vali JavaScriptda yozadi. Soli qaysi tilda yozadi?",
+      "options": ["Python", "JavaScript", "Go", "Aniqlash mumkin emas"],
+      "correctIndex": 0
     },
     {
       "id": 3,
-      "question": "¬1 (birning inkori) qiymati nechaga teng?",
-      "options": ["0", "1", "A", "Aniqlanmagan"],
+      "question": "Kompaniyada serverga kirish huquqiga ega har bir xodim xavfsizlik treningidan oʻtgan. Ahmedda serverga kirish huquqi bor. Quyidagilardan qaysi biri toʻgʻri?",
+      "options": [
+        "Ahmed treningdan oʻtgan",
+        "Ahmed treningdan oʻtmagan",
+        "Aniqlash mumkin emas",
+        "Ahmed serverga kira olmaydi"
+      ],
       "correctIndex": 0
     },
     {
       "id": 4,
-      "question": "A=1, B=1 boʻlsa, A⊕B (istisno YOKI, XOR) qiymati nechaga teng?",
-      "options": ["0", "1", "A", "¬A"],
-      "correctIndex": 0
+      "question": "Ikkita server A va B. Biri har doim \"true\", biri har doim \"false\" qaytaradi. A dedi: \"Biz ikkimiz ham false qaytaramiz\". Kim true qaytaradi?",
+      "options": ["A", "B", "Hech qaysi", "Aniqlash mumkin emas"],
+      "correctIndex": 1
     },
     {
       "id": 5,
-      "question": "A∧B konyunksiya ifoda qachon rost (1) qiymatga ega boʻladi?",
-      "options": [
-        "A va B ikkalasi ham rost boʻlganda",
-        "Kamida bittasi rost boʻlganda",
-        "Faqat A rost boʻlganda",
-        "Hech qachon"
-      ],
-      "correctIndex": 0
+      "question": "Xotira blokining hajmi har qadamda ikki barobar oshadi. Qator: 1, 2, 4, 8, 16, ?. Keyingi son qaysi?",
+      "options": ["24", "32", "18", "20"],
+      "correctIndex": 1
     },
     {
       "id": 6,
-      "question": "A∨B dizyunksiya ifoda qachon yolgʻon (0) qiymatga ega boʻladi?",
+      "question": "Toʻrtta server bitta xonada 1, 2, 3, 4-javonlarda joylashgan. DB-server 4-javonda. Mail-server 1-javonda. Fayl-server mail-serverdan keyin va web-serverdan oldin turibdi. Web-server qaysi javonda?",
+      "options": ["1", "2", "3", "4"],
+      "correctIndex": 2
+    },
+    {
+      "id": 7,
+      "question": "Programmist Ali va Vali. Biri ritsar (har doim rost), biri yolgʻonchi (har doim yolgʻon). Ali: \"Vali yolgʻonchi\". Vali: \"Men va Ali bir xil turdamiz\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi ham", "Hech qaysi"],
+      "correctIndex": 0
+    },
+    {
+      "id": 8,
+      "question": "Barcha CSS fayllari .css kengaytmasi bilan tugaydi. style.txt fayl .css kengaytmasi bilan tugamagan. Quyidagilardan qaysi biri toʻgʻri?",
       "options": [
-        "Ikkalasi ham rost boʻlganda",
-        "Ikkalasi ham yolgʻon boʻlganda",
-        "Faqat A yolgʻon boʻlganda",
-        "Hech qachon"
+        "style.txt — CSS fayl",
+        "style.txt — CSS fayl emas",
+        "Aniqlash mumkin emas",
+        "Barcha .txt fayllar CSS"
       ],
       "correctIndex": 1
     },
     {
-      "id": 7,
-      "question": "Ikki argumentli mantiqiy funksiya uchun rostlik jadvalida nechta satr boʻladi?",
-      "options": ["2", "3", "4", "8"],
-      "correctIndex": 2
-    },
-    {
-      "id": 8,
-      "question": "Uch argumentli mantiqiy funksiya uchun rostlik jadvalida nechta satr boʻladi?",
-      "options": ["4", "6", "8", "16"],
-      "correctIndex": 2
-    },
-    {
       "id": 9,
-      "question": "n argumentli mantiqiy funksiyaning rostlik jadvalida necha satr boʻladi?",
-      "options": ["n", "2n", "n²", "2ⁿ"],
-      "correctIndex": 3
+      "question": "Toʻrtta dasturchi: Lola, Madina, Nodira, Asal. Har birining sevimli IDE-si bor: VS Code, IntelliJ, PyCharm, Vim. Lola Vim ishlatmaydi va IntelliJ ham emas. Madina — PyCharm. Asal Vim ishlatadi. Nodira nimani ishlatadi?",
+      "options": ["VS Code", "IntelliJ", "PyCharm", "Vim"],
+      "correctIndex": 1
     },
     {
       "id": 10,
-      "question": "n argumentli har xil mantiqiy funksiyalar soni nechta?",
-      "options": ["2ⁿ", "n²", "2^(2ⁿ)", "n!"],
-      "correctIndex": 2
+      "question": "Ikkita server A va B. Biri har doim true, biri har doim false. A dedi: \"Biz ikkimiz ham true qaytaramiz\". Kim true qaytaradi?",
+      "options": ["A", "B", "Ikkalasi", "Hech kim"],
+      "correctIndex": 1
     },
     {
       "id": 11,
-      "question": "A⊕B (XOR, istisno YOKI) qachon rost qiymat oladi?",
-      "options": [
-        "A va B teng qiymatda boʻlganda",
-        "A va B turli qiymatda boʻlganda",
-        "Ikkalasi ham rost boʻlganda",
-        "Ikkalasi ham yolgʻon boʻlganda"
-      ],
+      "question": "Massiv indekslari noldan boshlanadi. Indeks qatori: 0, 1, 2, 3, 4, ?. Keyingi indeks qaysi?",
+      "options": ["4", "5", "6", "10"],
       "correctIndex": 1
     },
     {
       "id": 12,
-      "question": "A=1, B=0, C=1 boʻlsa, (A∧B)∨C ifoda qiymati nechaga teng?",
-      "options": ["0", "1", "A", "A∧C"],
-      "correctIndex": 1
+      "question": "Beshta server: S1, S2, S3, S4, S5. Har birida bittadan operatsion tizim: Linux, Windows, MacOS, FreeBSD, Solaris. S1 — Linuxda. S3 Windowsda emas va MacOS-da emas. S5 — FreeBSD-da. S4 — Windowsda. S3 qaysi OS-da ishlaydi?",
+      "options": ["Linux", "MacOS", "FreeBSD", "Solaris"],
+      "correctIndex": 3
     },
     {
       "id": 13,
-      "question": "A=1, B=1, C=0 boʻlsa, A∧(B∨C) ifoda qiymati nechaga teng?",
-      "options": ["0", "1", "¬A", "B∧C"],
-      "correctIndex": 1
+      "question": "Agar dastur kompilyatsiya qilinsa, .exe fayl yaratiladi. Dastur kompilyatsiya qilindi. Qaysi xulosa toʻgʻri?",
+      "options": [
+        ".exe fayl yaratildi",
+        ".exe fayl yaratilmadi",
+        "Aniqlash mumkin emas",
+        "Dastur kompilyatsiya qilinmagan"
+      ],
+      "correctIndex": 0
     },
     {
       "id": 14,
-      "question": "De Morgan qonuniga koʻra ¬(A∧B) ifoda qaysi ifodaga teng kuchli?",
-      "options": ["¬A∧¬B", "¬A∨¬B", "A∨B", "A∧B"],
+      "question": "Uchta bot X, Y, Z. Biri har doim rost, ikkitasi har doim yolgʻon. X: \"Y yolgʻonchi\". Y: \"Z yolgʻonchi\". Z: \"X va Y ikkalasi ham yolgʻonchi\". Kim har doim rost gapiradi?",
+      "options": ["X", "Y", "Z", "Aniqlash mumkin emas"],
       "correctIndex": 1
     },
     {
       "id": 15,
-      "question": "De Morgan qonuniga koʻra ¬(A∨B) ifoda qaysi ifodaga teng kuchli?",
-      "options": ["¬A∨¬B", "¬A∧¬B", "A∧B", "¬A"],
-      "correctIndex": 1
+      "question": "Uchta dasturchi printer navbatida turibdi: Ali, Bobur, Sardor. Ali Boburdan oldin, Sardor Boburdan keyin. Birinchi kim?",
+      "options": ["Ali", "Bobur", "Sardor", "Aniqlash mumkin emas"],
+      "correctIndex": 0
     },
     {
       "id": 16,
-      "question": "A=0, B=1 boʻlsa, ¬A∧B ifoda qiymati nechaga teng?",
-      "options": ["0", "1", "A", "B"],
+      "question": "Agar serverga kirish parol orqali boʻlsa, har bir kirish jurnalga yoziladi. Bu kirish jurnalga yozilmagan. Qaysi xulosa toʻgʻri?",
+      "options": [
+        "Kirish parol orqali boʻlgan",
+        "Kirish parol orqali boʻlmagan",
+        "Aniqlash mumkin emas",
+        "Kirish boʻlmagan"
+      ],
       "correctIndex": 1
     },
     {
       "id": 17,
-      "question": "(1∧0)∨(1∧1) ifoda qiymati nechaga teng?",
-      "options": ["0", "1", "2", "Aniqlanmagan"],
-      "correctIndex": 1
+      "question": "Bitta server X. U dedi: \"Men hozir false qaytaryapman\". Bunday vaziyat mumkinmi?",
+      "options": [
+        "Ha, u har doim true qaytaradi",
+        "Ha, u har doim false qaytaradi",
+        "Bunday vaziyat mantiqan mumkin emas",
+        "Aniqlash mumkin emas"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 18,
-      "question": "Idempotentlik qonuniga koʻra A∧A ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
-      "correctIndex": 2
+      "question": "Xotirada kilobayt, megabayt, gigabayt har birida 1024 marta oshib boradi. 1 GB nechta KB ga teng?",
+      "options": ["1024", "1048576", "2048", "512"],
+      "correctIndex": 1
     },
     {
       "id": 19,
-      "question": "Idempotentlik qonuniga koʻra A∨A ifoda nimaga teng?",
-      "options": ["0", "1", "A", "2A"],
-      "correctIndex": 2
-    },
-    {
-      "id": 20,
-      "question": "Ziddiyat qonuni A∧¬A ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Toʻrtta talaba — Aziz, Bahodir, Doniyor, Karim — informatika fanini turli kunlarda topshirdi: dushanba, seshanba, chorshanba, payshanba. Aziz Karimdan oldin topshirdi. Bahodir chorshanbada topshirmadi. Doniyor seshanbada topshirdi. Karim payshanbada topshirdi. Bahodir qaysi kuni topshirdi?",
+      "options": ["dushanba", "seshanba", "chorshanba", "payshanba"],
       "correctIndex": 0
     },
     {
+      "id": 20,
+      "question": "Programmist Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Vali yolgʻonchi\". Vali: \"Men va Ali turli turdamiz\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Hech qaysi"],
+      "correctIndex": 1
+    },
+    {
       "id": 21,
-      "question": "Uchinchini istisno qonuni A∨¬A ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Barcha Linux serverlari SSH orqali boshqariladi. Bu server SSH orqali boshqarilmaydi. Bu server haqida nima xulosa qilish mumkin?",
+      "options": [
+        "U — Linux server",
+        "U — Linux server emas",
+        "Aniqlash mumkin emas",
+        "U — Windows server"
+      ],
       "correctIndex": 1
     },
     {
       "id": 22,
-      "question": "A∧1 ifoda nimaga teng (birlik qonuni)?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Uchta server uchta turli qavatda joylashgan: 1-, 2-, 3-qavatlarda. Web-server DB-serverdan past qavatda. DB-server mail-serverdan past qavatda. Mail-server qaysi qavatda?",
+      "options": ["1", "2", "3", "Aniqlash mumkin emas"],
       "correctIndex": 2
     },
     {
       "id": 23,
-      "question": "A∨1 ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
-      "correctIndex": 1
-    },
-    {
-      "id": 24,
-      "question": "A∧0 ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Ikkita admin: Aziz va Doniyor. Biri har doim rost, biri har doim yolgʻon. Aziz dedi: \"Men va Doniyor ikkalamiz ham ritsarmiz\". Kim yolgʻonchi?",
+      "options": ["Aziz", "Doniyor", "Ikkalasi", "Hech qaysi"],
       "correctIndex": 0
     },
     {
+      "id": 24,
+      "question": "Sonlar ketma-ketligi: 1, 1, 2, 3, 5, 8, 13, ?. Keyingi son qaysi?",
+      "options": ["16", "18", "20", "21"],
+      "correctIndex": 3
+    },
+    {
       "id": 25,
-      "question": "A∨0 ifoda nimaga teng (nol qonuni)?",
-      "options": ["0", "1", "A", "¬A"],
-      "correctIndex": 2
+      "question": "Beshta IT mutaxassis: Ali, Bobur, Sardor, Doniyor, Eshmurod — beshta turli sohada ishlaydi: backend, frontend, devops, QA, dizayn. Ali backend emas va frontend ham emas. Bobur — QA. Sardor — devops. Doniyor — frontend. Ali qaysi soha bilan shugʻullanadi?",
+      "options": ["backend", "devops", "QA", "dizayn"],
+      "correctIndex": 3
     },
     {
       "id": 26,
-      "question": "Ikki marta inkor qonuni ¬(¬A) nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Agar foydalanuvchi tizimga kirgan boʻlsa, LED chiroq yonadi. Hozir LED chiroq yonib turibdi. Quyidagi xulosalardan qaysi biri MAJBURIY toʻgʻri?",
+      "options": [
+        "Foydalanuvchi tizimga kirgan",
+        "Foydalanuvchi tizimga kirmagan",
+        "Aniqlash mumkin emas (chiroq boshqa sabab bilan ham yonishi mumkin)",
+        "Tizim oʻchirilgan"
+      ],
       "correctIndex": 2
     },
     {
       "id": 27,
-      "question": "Yutilish qonuniga koʻra A∨(A∧B) ifoda nimaga teng?",
-      "options": ["A∧B", "A", "B", "A∨B"],
-      "correctIndex": 1
+      "question": "Uchta bot: X, Y, Z. Biri ritsar, ikkitasi yolgʻonchi. X: \"Y ritsar\". Y: \"Z yolgʻonchi\". Z: \"X yolgʻonchi\". Kim ritsar?",
+      "options": ["X", "Y", "Z", "Aniqlash mumkin emas"],
+      "correctIndex": 2
     },
     {
       "id": 28,
-      "question": "Yutilish qonuniga koʻra A∧(A∨B) ifoda nimaga teng?",
-      "options": ["A", "B", "A∧B", "A∨B"],
-      "correctIndex": 0
+      "question": "Uchta fayl serverga yuklab olinadi: a.txt, b.txt, c.txt. c.txt b.txt-dan keyin yuklanadi. a.txt c.txt-dan keyin yuklanadi. Birinchi qaysi fayl yuklanadi?",
+      "options": ["a.txt", "b.txt", "c.txt", "Aniqlash mumkin emas"],
+      "correctIndex": 1
     },
     {
       "id": 29,
-      "question": "Distributivlik qonuniga koʻra A∧(B∨C) ifoda nimaga teng?",
-      "options": [
-        "(A∧B)∨(A∧C)",
-        "(A∨B)∧(A∨C)",
-        "A∨(B∧C)",
-        "A∧B∧C"
-      ],
-      "correctIndex": 0
+      "question": "Sonlar ketma-ketligi: 1, 4, 9, 16, 25, ?. Keyingi son qaysi?",
+      "options": ["30", "32", "36", "49"],
+      "correctIndex": 2
     },
     {
       "id": 30,
-      "question": "Distributivlik qonuniga koʻra A∨(B∧C) ifoda nimaga teng?",
-      "options": [
-        "(A∨B)∧(A∨C)",
-        "(A∧B)∨(A∧C)",
-        "A∧B∧C",
-        "A∨B∨C"
-      ],
-      "correctIndex": 0
+      "question": "Ikkita server A va B. Biri har doim true, biri har doim false. A: \"Kamida bittamiz false qaytaradi\". Kim false qaytaradi?",
+      "options": ["A", "B", "Ikkalasi", "Bunday vaziyat mumkin emas"],
+      "correctIndex": 1
     },
     {
       "id": 31,
-      "question": "¬(A∧B∧C) ifoda Bul algebrasida qaysi ifodaga teng kuchli?",
+      "question": "Barcha JavaScript dasturchilari npm-ni biladilar. Karim npm-ni bilmaydi. Karim haqida nima xulosa qilish mumkin?",
       "options": [
-        "¬A∧¬B∧¬C",
-        "¬A∨¬B∨¬C",
-        "A∨B∨C",
-        "(A∧B)∨C"
+        "Karim — JS dasturchi",
+        "Karim — JS dasturchi emas",
+        "Aniqlash mumkin emas",
+        "Karim hech qanday dasturlash tilini bilmaydi"
       ],
       "correctIndex": 1
     },
     {
       "id": 32,
-      "question": "¬(A∨B∨C) ifoda qaysi ifodaga teng kuchli?",
-      "options": [
-        "¬A∨¬B∨¬C",
-        "¬A∧¬B∧¬C",
-        "A∧B∧C",
-        "0"
-      ],
+      "question": "Beshta dasturchi navbatda: Ali, Bobur, Sardor, Doniyor, Eshmurod. Ali Boburdan oldin. Sardor Doniyordan oldin. Eshmurod oxirgi. Bobur Sardordan oldin. Kim ikkinchi oʻrinda turibdi?",
+      "options": ["Ali", "Bobur", "Sardor", "Doniyor"],
       "correctIndex": 1
     },
     {
       "id": 33,
-      "question": "(A∧B)∨(A∧¬B) ifoda soddalashtirilsa nimaga teng?",
-      "options": ["A", "B", "A∧B", "A∨B"],
+      "question": "Programmist Ali dedi: \"Agar men ritsar boʻlsam, Vali yolgʻonchi\". Biri ritsar, biri yolgʻonchi. Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Bunday vaziyat mumkin emas"],
       "correctIndex": 0
     },
     {
       "id": 34,
-      "question": "(A∨B)∧(A∨¬B) ifoda soddalashtirilsa nimaga teng?",
-      "options": ["A", "B", "¬A", "A∧B"],
-      "correctIndex": 0
+      "question": "Ikkilik sanoq sistemasidagi qator: 1, 10, 11, 100, 101, ?. Keyingi son qaysi?",
+      "options": ["102", "110", "111", "1000"],
+      "correctIndex": 1
     },
     {
       "id": 35,
-      "question": "A→B implikatsiya qachon yolgʻon qiymat oladi?",
-      "options": [
-        "A=1, B=1 boʻlganda",
-        "A=1, B=0 boʻlganda",
-        "A=0, B=1 boʻlganda",
-        "A=0, B=0 boʻlganda"
-      ],
+      "question": "Uchta talaba — Lola, Madina, Nodira — uchta sohada birinchi oʻrinni egalladi: matematika, fizika, informatika. Lola informatika boʻyicha emas. Madina fizika boʻyicha ham emas, informatika boʻyicha ham emas. Lola qaysi sohada birinchi oʻrinni egalladi?",
+      "options": ["matematika", "fizika", "informatika", "Aniqlash mumkin emas"],
       "correctIndex": 1
     },
     {
       "id": 36,
-      "question": "A=0 boʻlganda A→B implikatsiya qaysi qiymatga ega boʻladi?",
-      "options": ["0", "1", "B ga teng", "Aniqlanmagan"],
+      "question": "Hech bir veb-server SQL soʻrovlarni bevosita bajarmaydi. Apache — veb-server. Apache haqida nima xulosa qilish mumkin?",
+      "options": [
+        "Apache SQL soʻrovlarni bevosita bajaradi",
+        "Apache SQL soʻrovlarni bevosita bajarmaydi",
+        "Aniqlash mumkin emas",
+        "Apache — DB-server"
+      ],
       "correctIndex": 1
     },
     {
       "id": 37,
-      "question": "A→B implikatsiya quyidagi ifodalardan qaysi biriga teng kuchli?",
-      "options": ["A∧B", "¬A∨B", "A∨¬B", "¬A∧B"],
-      "correctIndex": 1
+      "question": "Uchta programmist: Ali, Bobur, Sardor. Ikkitasi ritsar, bittasi yolgʻonchi. Ali: \"Bobur yolgʻonchi\". Bobur: \"Sardor ritsar\". Sardor: \"Ali yolgʻonchi\". Kim yolgʻonchi?",
+      "options": ["Ali", "Bobur", "Sardor", "Aniqlash mumkin emas"],
+      "correctIndex": 0
     },
     {
       "id": 38,
-      "question": "A→B implikatsiyaning kontrapozitsiyasi qaysi?",
-      "options": ["B→A", "¬A→¬B", "¬B→¬A", "A→¬B"],
-      "correctIndex": 2
+      "question": "Toʻrtta xonada toʻrtta server bor: web, mail, DB, fayl. Xona raqamlari: 101, 102, 103, 104. Web-server DB-serverdan kichik raqamli xonada. Mail-server 104-xonada. Fayl-server 102-xonada. Web-server qaysi xonada?",
+      "options": ["101", "102", "103", "104"],
+      "correctIndex": 0
     },
     {
       "id": 39,
-      "question": "¬(A→B) implikatsiyaning inkori qaysi ifodaga teng kuchli?",
-      "options": ["¬A∧¬B", "A∧¬B", "¬A∨B", "A→¬B"],
+      "question": "Tarmoq paketlari ikki barobar ortib boradi: 64, 128, 256, 512, ?. Keyingi qiymat qaysi?",
+      "options": ["1000", "1024", "640", "768"],
       "correctIndex": 1
     },
     {
       "id": 40,
-      "question": "A↔B ekvivalentsiya qachon rost qiymatga ega boʻladi?",
-      "options": [
-        "A va B turli qiymatda boʻlganda",
-        "A va B bir xil qiymatda boʻlganda",
-        "Faqat A rost boʻlganda",
-        "Hech qachon"
-      ],
-      "correctIndex": 1
-    },
-    {
-      "id": 41,
-      "question": "A↔B ekvivalentsiya ifoda qaysi ifodaga teng kuchli?",
-      "options": [
-        "(A→B)∧(B→A)",
-        "A∧B",
-        "A∨B",
-        "A⊕B"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 42,
-      "question": "A→A ifoda har doim qaysi qiymatga ega?",
-      "options": ["A", "¬A", "0", "1"],
-      "correctIndex": 3
-    },
-    {
-      "id": 43,
-      "question": "A→(B→A) ifoda har doim qaysi qiymatga ega?",
-      "options": ["1 (tavtologiya)", "0 (ziddiyat)", "A ga teng", "B ga teng"],
-      "correctIndex": 0
-    },
-    {
-      "id": 44,
-      "question": "\"Agar yomgʻir yogʻsa, yer xoʻl boʻladi\" — yer xoʻl boʻlmaganini bilsak, qaysi xulosa toʻgʻri?",
-      "options": [
-        "Yomgʻir yogʻgan",
-        "Yomgʻir yogʻmagan",
-        "Aniq xulosa chiqarib boʻlmaydi",
-        "Yomgʻir yogʻishi mumkin edi"
-      ],
-      "correctIndex": 1
-    },
-    {
-      "id": 45,
-      "question": "\"Agar P boʻlsa, Q boʻladi\" — Q rost boʻlsa, P haqida qanday xulosa chiqarish mumkin?",
-      "options": [
-        "P albatta rost",
-        "P albatta yolgʻon",
-        "P haqida aniq xulosa chiqarib boʻlmaydi",
-        "P=Q"
-      ],
+      "question": "Ikkita ish stoli: A va B. Biri har doim toʻgʻri natija beradi, biri har doim notoʻgʻri. A: \"B notoʻgʻri natija beradi\". B: \"Men toʻgʻri natija beraman\". Kim toʻgʻri natija beradi?",
+      "options": ["A", "B", "Aniqlash mumkin emas", "Bunday vaziyat mumkin emas"],
       "correctIndex": 2
     },
     {
+      "id": 41,
+      "question": "Agar bot yangilangan boʻlsa, u yangi versiyani koʻrsatadi. Bot eski versiyani koʻrsatmoqda. Qaysi xulosa toʻgʻri?",
+      "options": [
+        "Bot yangilangan",
+        "Bot yangilanmagan",
+        "Aniqlash mumkin emas",
+        "Bot ishlamayapti"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 42,
+      "question": "Uchta jihoz — printer, skaner, monitor — uch xil rangda: qora, oq, kulrang. Printer oq rangda emas. Skaner qora rangda. Monitor qaysi rangda?",
+      "options": ["qora", "oq", "kulrang", "Aniqlash mumkin emas"],
+      "correctIndex": 1
+    },
+    {
+      "id": 43,
+      "question": "Toʻrtta dasturchi: Ali, Bobur, Sardor, Doniyor. Uchtasi ritsar, bittasi yolgʻonchi. Ali: \"Bobur ritsar\". Bobur: \"Sardor ritsar\". Sardor: \"Doniyor yolgʻonchi\". Doniyor: \"Ali yolgʻonchi\". Kim yolgʻonchi?",
+      "options": ["Ali", "Bobur", "Sardor", "Doniyor"],
+      "correctIndex": 3
+    },
+    {
+      "id": 44,
+      "question": "Beshta loyiha imzolanmoqda: A, B, C, D, E. A imzolanadi B-dan oldin. D imzolanadi A-dan keyin. E hammasidan keyin imzolanadi. C imzolanadi B va D imzolanganidan keyin. Birinchi qaysi loyiha imzolanadi?",
+      "options": ["A", "B", "C", "D"],
+      "correctIndex": 0
+    },
+    {
+      "id": 45,
+      "question": "Barcha \"while\" sikllarining ichida sharti tekshiriladi. Ushbu kod blokida sharti tekshirilmaydi. Bu blok haqida nima xulosa qilish mumkin?",
+      "options": [
+        "Bu blok — while sikli",
+        "Bu blok — while sikli emas",
+        "Aniqlash mumkin emas",
+        "Bu blok — funksiya"
+      ],
+      "correctIndex": 1
+    },
+    {
       "id": 46,
-      "question": "A→B rost va A rost ekani maʼlum. B haqida nima deyish mumkin?",
-      "options": ["B rost", "B yolgʻon", "Aniqlanmagan", "B=A"],
+      "question": "Ikkita server: A va B. Biri har doim true, biri har doim false. A: \"Bizdan kamida bittamiz true qaytaradi\". Kim true qaytaradi?",
+      "options": ["A", "B", "Ikkalasi", "Aniqlash mumkin emas"],
       "correctIndex": 0
     },
     {
       "id": 47,
-      "question": "A→B rost va B yolgʻon ekani maʼlum. A haqida nima deyish mumkin?",
-      "options": ["A rost", "A yolgʻon", "Aniqlanmagan", "A=B"],
-      "correctIndex": 1
+      "question": "Qator: 2, 3, 5, 7, 11, 13, ?. Keyingi son qaysi?",
+      "options": ["14", "15", "17", "19"],
+      "correctIndex": 2
     },
     {
       "id": 48,
-      "question": "\"Hamma talabalar imtihon topshirdi\" gapining mantiqiy inkori qaysi?",
-      "options": [
-        "Hech bir talaba imtihon topshirmadi",
-        "Kamida bitta talaba imtihon topshirmadi",
-        "Hamma talabalar imtihonga kelmadi",
-        "Faqat bitta talaba topshirdi"
-      ],
-      "correctIndex": 1
+      "question": "Toʻrtta dasturchi har biri bittadan tilni biladi: Python, Java, C++, Ruby. Ali Java va Ruby ni bilmaydi. Bobur — C++. Sardor Python emas. Doniyor — Java. Sardor qaysi tilni biladi?",
+      "options": ["Python", "Java", "C++", "Ruby"],
+      "correctIndex": 3
     },
     {
       "id": 49,
-      "question": "A→B rost va B rost boʻlsa, A qaysi qiymatda boʻlishi mumkin?",
-      "options": [
-        "Albatta rost",
-        "Albatta yolgʻon",
-        "Rost yoki yolgʻon (aniqlanmagan)",
-        "Faqat 0"
-      ],
+      "question": "Uchta bot: X, Y, Z. Bittasi yolgʻonchi, qolganlari rost gapiradi. X: \"Z yolgʻonchi\". Y: \"Z yolgʻonchi\". Z: \"X va Y turli turdamiz\". Kim yolgʻonchi?",
+      "options": ["X", "Y", "Z", "Aniqlash mumkin emas"],
       "correctIndex": 2
     },
     {
       "id": 50,
-      "question": "A=0 va B=1 boʻlsa, (A→B)→A ifoda qaysi qiymatga ega?",
-      "options": ["0", "1", "A", "B"],
-      "correctIndex": 0
+      "question": "Agar dasturda xato boʻlsa, kompilyator ogohlantirish qaytaradi. Kompilyator ogohlantirish qaytardi. Qaysi xulosa MAJBURIY toʻgʻri?",
+      "options": [
+        "Dasturda xato bor",
+        "Dasturda xato yoʻq",
+        "Aniqlash mumkin emas (ogohlantirish boshqa sabab bilan ham qaytarilishi mumkin)",
+        "Kompilyator ishlamayapti"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 51,
-      "question": "A→B va B→C rost boʻlsa, qaysi xulosa toʻgʻri?",
-      "options": [
-        "A→C rost (tranzitivlik)",
-        "C→A rost",
-        "A↔C rost",
-        "Hech qanday xulosa chiqib boʻlmaydi"
-      ],
-      "correctIndex": 0
+      "question": "Uchta xona 5-qavatda: 501, 502, 503. Lola 501-da yashamaydi. Madina 503-da yashaydi. Nodira 502-da yashamaydi. Lola qaysi xonada yashaydi?",
+      "options": ["501", "502", "503", "Aniqlash mumkin emas"],
+      "correctIndex": 1
     },
     {
       "id": 52,
-      "question": "Silogizm: \"Hamma odamlar oʻladi. Sokrat — odam.\" Qaysi xulosa toʻgʻri?",
-      "options": [
-        "Sokrat oʻladi",
-        "Sokrat oʻlmaydi",
-        "Aniqlanmagan",
-        "Sokrat odam emas"
-      ],
+      "question": "Ikkita ishlovchi: Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Hech boʻlmaganda bittamiz yolgʻonchi\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Hech qaysi"],
       "correctIndex": 0
     },
     {
       "id": 53,
-      "question": "Modus ponens qoidasi qaysi?",
-      "options": [
-        "A va A→B dan B kelib chiqadi",
-        "A→B va ¬B dan ¬A kelib chiqadi",
-        "A∨B va ¬A dan B kelib chiqadi",
-        "A va B dan A∧B kelib chiqadi"
-      ],
-      "correctIndex": 0
+      "question": "Toʻrtta funksiya turli vaqtlarda chaqirildi: f1, f2, f3, f4. f1-dan keyin f3 chaqirilgan. f2 birinchi chaqirilgan. f4 oxirgi chaqirilgan. f3 ikkinchi oʻrinda chaqirilmagan. f3 qaysi oʻrinda chaqirilgan?",
+      "options": ["1", "2", "3", "4"],
+      "correctIndex": 2
     },
     {
       "id": 54,
-      "question": "Modus tollens qoidasi qaysi?",
-      "options": [
-        "A va A→B dan B",
-        "A→B va ¬B dan ¬A",
-        "A→B va B dan A",
-        "A∧B dan A"
-      ],
+      "question": "Hajmi har qadamda yarmiga kamayadi: 1024, 512, 256, 128, ?. Keyingi qiymat qaysi?",
+      "options": ["32", "64", "100", "120"],
       "correctIndex": 1
     },
     {
       "id": 55,
-      "question": "Dizyunktiv silogizm qoidasi qaysi?",
+      "question": "Barcha test-yozuvchilar QA boʻlimida ishlaydi. Madina QA boʻlimida ishlamaydi. Madina haqida nima deyish mumkin?",
       "options": [
-        "A∨B va ¬A dan B kelib chiqadi",
-        "A∧B va ¬A dan B kelib chiqadi",
-        "A→B va A dan B kelib chiqadi",
-        "A∨B dan A va B kelib chiqadi"
+        "Madina — test yozuvchi",
+        "Madina — test yozuvchi emas",
+        "Aniqlash mumkin emas",
+        "Madina — dasturchi"
       ],
-      "correctIndex": 0
+      "correctIndex": 1
     },
     {
       "id": 56,
-      "question": "A→B rost va A yolgʻon. B haqida qaysi xulosa toʻgʻri?",
-      "options": [
-        "B rost",
-        "B yolgʻon",
-        "Aniqlanmagan",
-        "A va B teng"
-      ],
-      "correctIndex": 2
+      "question": "Ikkita server: A va B. Biri har doim true, biri har doim false. A: \"Men va B bir xil turdagi serverlarmiz\". Kim true qaytaradi?",
+      "options": ["A", "B", "Ikkalasi", "Bunday vaziyat mumkin emas"],
+      "correctIndex": 1
     },
     {
       "id": 57,
-      "question": "\"A→B rost, B rost ⇒ A rost\" — bu xulosa toʻgʻrimi?",
-      "options": [
-        "Har doim toʻgʻri",
-        "Notoʻgʻri (umuman olganda) — bu xato xulosa",
-        "Faqat A=0 boʻlganda toʻgʻri",
-        "Faqat B=0 boʻlganda toʻgʻri"
-      ],
+      "question": "Beshta IT-konferensiya beshta turli oyda boʻlib oʻtadi: yanvar, fevral, mart, aprel, may. Python-konf yanvarda. JS-konf martda. Go-konf aprelda. C++-konf maydan oldin. Java-konf C++-konfdan keyin boʻladi. C++-konf qaysi oyda?",
+      "options": ["yanvar", "fevral", "mart", "aprel"],
       "correctIndex": 1
     },
     {
       "id": 58,
-      "question": "\"Barcha musichalar — qush. Bu hayvon — musicha emas.\" Qaysi xulosa toʻgʻri?",
-      "options": [
-        "Bu hayvon — qush",
-        "Bu hayvon — qush emas",
-        "Hech qanday aniq xulosa chiqarib boʻlmaydi",
-        "Bu hayvon — musicha"
-      ],
-      "correctIndex": 2
+      "question": "Ikkita bot: A va B. Biri ritsar, biri yolgʻonchi. A: \"B yolgʻonchi\". B: \"Hech boʻlmaganda bittamiz ritsar\". Kim ritsar?",
+      "options": ["A", "B", "Ikkalasi", "Hech qaysi"],
+      "correctIndex": 1
     },
     {
       "id": 59,
-      "question": "P→Q rost va ¬P rost. Q haqida nima xulosa chiqarish mumkin?",
+      "question": "Hamma open-source loyihalar bepul yuklab olinadi. \"MyTool\" loyihasi bepul yuklab olinmaydi. Nima xulosa qilish mumkin?",
       "options": [
-        "Q rost",
-        "Q yolgʻon",
-        "Q aniqlanmagan",
-        "Q=P"
+        "MyTool — open-source",
+        "MyTool — open-source emas",
+        "Aniqlash mumkin emas",
+        "MyTool yuklab olinmagan"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": 60,
-      "question": "Tavtologiya — bu qanday ifoda?",
-      "options": [
-        "Har doim rost boʻluvchi ifoda",
-        "Har doim yolgʻon boʻluvchi ifoda",
-        "Faqat baʼzi qiymatlarda rost ifoda",
-        "Maʼnoga ega boʻlmagan ifoda"
-      ],
+      "question": "Uchta admin — Olim, Polat, Rustam — uchta tizimga javob beradi: pochta, web, DB. Olim — DB ham emas, web ham emas. Polat — pochta emas. Olim qaysi tizimga javob beradi?",
+      "options": ["pochta", "web", "DB", "Aniqlash mumkin emas"],
       "correctIndex": 0
     },
     {
       "id": 61,
-      "question": "Ziddiyat (kontradiksiya) — bu qanday ifoda?",
-      "options": [
-        "Har doim yolgʻon boʻluvchi ifoda",
-        "Har doim rost boʻluvchi ifoda",
-        "Argumentlar soniga bogʻliq ifoda",
-        "Maʼnosi noaniq ifoda"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 62,
-      "question": "Quyidagi ifodalardan qaysi biri tavtologiya?",
-      "options": ["A∧¬A", "A∨¬A", "A→¬A", "¬A∧A"],
+      "question": "Ikkita ishchi-bot: Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Ikkimizdan birortasi ritsar emas\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Hech qaysi"],
       "correctIndex": 1
     },
     {
-      "id": 63,
-      "question": "Quyidagi ifodalardan qaysi biri ziddiyat (har doim yolgʻon)?",
-      "options": ["A∨¬A", "A→A", "A∧¬A", "¬(A∧¬A)"],
+      "id": 62,
+      "question": "Qator: 1, 3, 6, 10, 15, ?. Keyingi son qaysi?",
+      "options": ["18", "20", "21", "25"],
       "correctIndex": 2
     },
     {
-      "id": 64,
-      "question": "\"Yomgʻir yogʻyapti yoki quyosh chiqyapti. Yomgʻir yogʻmayapti.\" Qaysi xulosa toʻgʻri?",
-      "options": [
-        "Quyosh chiqyapti",
-        "Quyosh chiqmayapti",
-        "Aniqlanmagan",
-        "Yomgʻir yogʻyapti"
-      ],
+      "id": 63,
+      "question": "Toʻrtta talaba imtihondan baho oldi: Aziz, Bahodir, Doniyor, Karim. Baholar: 2, 3, 4, 5. Aziz Bahodirdan yuqori baho oldi. Karim 3 baho oldi. Doniyor 5 baho oldi. Bahodir qaysi bahoni oldi?",
+      "options": ["2", "3", "4", "5"],
       "correctIndex": 0
+    },
+    {
+      "id": 64,
+      "question": "Agar tugma bosilsa, foydalanuvchi profili ochiladi. Foydalanuvchi profili ochilgan. Qaysi xulosa MAJBURIY toʻgʻri?",
+      "options": [
+        "Tugma bosildi",
+        "Tugma bosilmadi",
+        "Aniqlash mumkin emas (profil boshqa yoʻl bilan ham ochilishi mumkin)",
+        "Foydalanuvchi tizimdan chiqdi"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 65,
-      "question": "A→B va ¬A→B rost. B haqida nima deyish mumkin?",
-      "options": [
-        "B rost (har holatda)",
-        "B yolgʻon",
-        "Aniqlanmagan",
-        "B=A"
-      ],
-      "correctIndex": 0
+      "question": "Uchta server: X, Y, Z. Bittasi true qaytaradi, ikkitasi false. X: \"Y true qaytaradi\". Y: \"X true qaytaradi\". Z: \"Men true qaytaraman\". Kim true qaytaradi?",
+      "options": ["X", "Y", "Z", "Aniqlash mumkin emas"],
+      "correctIndex": 2
     },
     {
       "id": 66,
-      "question": "∀x P(x) ifodasining inkori qaysi?",
-      "options": ["∀x ¬P(x)", "∃x ¬P(x)", "¬∃x P(x)", "∃x P(x)"],
+      "question": "Uchta server: A, B, C. Bittada Linux, bittada Windows, bittada MacOS. A Linux emas. B MacOS emas va Windows ham emas. C MacOS emas. Linux qaysi serverda?",
+      "options": ["A", "B", "C", "Aniqlash mumkin emas"],
       "correctIndex": 1
     },
     {
       "id": 67,
-      "question": "∃x P(x) ifodasining inkori qaysi?",
-      "options": ["∃x ¬P(x)", "∀x ¬P(x)", "¬∀x P(x)", "∀x P(x)"],
-      "correctIndex": 1
+      "question": "Programmist Ali dedi: \"Agar Vali ritsar boʻlsa, men yolgʻonchiman\". Biri ritsar, biri yolgʻonchi. Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Bunday vaziyat mumkin emas"],
+      "correctIndex": 0
     },
     {
       "id": 68,
-      "question": "\"Barcha qushlar ucha oladi\" gapining mantiqiy inkori qaysi?",
+      "question": "Barcha xavfsizlik xatolari \"critical\" rangi bilan ajratilgan. Bu xato \"critical\" rangda emas. Bu xato haqida nima deyish mumkin?",
       "options": [
-        "Hech bir qush ucha olmaydi",
-        "Kamida bitta qush ucha olmaydi",
-        "Hamma qushlar ucha olmaydi",
-        "Baʼzi qushlar ucha oladi"
+        "U — xavfsizlik xatosi",
+        "U — xavfsizlik xatosi emas",
+        "Aniqlash mumkin emas",
+        "U — sintaksis xato"
       ],
       "correctIndex": 1
     },
     {
       "id": 69,
-      "question": "\"Baʼzi gullar qizil\" gapining mantiqiy inkori qaysi?",
-      "options": [
-        "Hech bir gul qizil emas",
-        "Hamma gullar qizil",
-        "Baʼzi gullar qizil emas",
-        "Faqat bitta gul qizil"
-      ],
+      "question": "Beshta funksiyaning bajarilish vaqti turlicha: f1, f2, f3, f4, f5 — 10, 20, 30, 40, 50 ms. f1 eng tez. f5 eng sekin. f3 f4-dan tezroq. f2 — 30 ms. f3 nima vaqtda bajariladi?",
+      "options": ["20 ms", "30 ms", "40 ms", "50 ms"],
       "correctIndex": 0
     },
     {
       "id": 70,
-      "question": "∀x ∃y P(x,y) ifodasi nimani bildiradi?",
-      "options": [
-        "Har bir x uchun shunday y mavjudki, P(x,y) rost",
-        "Shunday x mavjudki, har bir y uchun P(x,y) rost",
-        "Hamma x va y uchun P(x,y) rost",
-        "Hech bir x va y uchun P(x,y) rost emas"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 71,
-      "question": "¬∀x P(x) ifoda qaysi ifodaga teng kuchli?",
-      "options": ["∀x ¬P(x)", "∃x ¬P(x)", "¬∃x P(x)", "∃x P(x)"],
+      "question": "Uchta dasturchi: A, B, C. Ikkitasi ritsar, bittasi yolgʻonchi. A: \"Men ritsarman\". B: \"A yolgʻonchi\". C: \"B yolgʻonchi\". Kim yolgʻonchi?",
+      "options": ["A", "B", "C", "Aniqlash mumkin emas"],
       "correctIndex": 1
     },
     {
+      "id": 71,
+      "question": "Toʻrtta IT-mutaxassis — Ali, Bobur, Sardor, Doniyor — toʻrtta loyihada ishladi: e-commerce, social network, fintech, edtech. Ali fintech ham emas, edtech ham emas. Bobur — e-commerce. Sardor — social network emas. Doniyor — edtech. Sardor qaysi loyihada ishladi?",
+      "options": ["e-commerce", "social network", "fintech", "edtech"],
+      "correctIndex": 2
+    },
+    {
       "id": 72,
-      "question": "¬∃x (P(x)∧Q(x)) ifoda qaysi ifodaga teng kuchli?",
+      "question": "Agar foydalanuvchi premium tarifda boʻlsa, u kuniga 1000 ta soʻrov yuborishi mumkin. Karim premium tarifda. Karim haqida nima toʻgʻri?",
       "options": [
-        "∀x (¬P(x)∨¬Q(x))",
-        "∃x (¬P(x)∧¬Q(x))",
-        "∀x (P(x)∧Q(x))",
-        "¬∀x (P(x)∨Q(x))"
+        "Karim kuniga 1000 ta soʻrov yuborishi mumkin",
+        "Karim kuniga 100 ta soʻrov yuborishi mumkin",
+        "Aniqlash mumkin emas",
+        "Karim hech qanday soʻrov yubora olmaydi"
       ],
       "correctIndex": 0
     },
     {
       "id": 73,
-      "question": "U={1,2,3} olamida ∀x∈U (x>0) gapi qaysi qiymatga ega?",
-      "options": ["Rost", "Yolgʻon", "Aniqlanmagan", "U ga bogʻliq"],
-      "correctIndex": 0
+      "question": "Programmist Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Vali yolgʻonchi\". Vali: \"Ali ritsar\". Bunday vaziyat mumkinmi?",
+      "options": [
+        "Ha, Ali ritsar",
+        "Ha, Vali ritsar",
+        "Ikkalasi ham ritsar",
+        "Bunday vaziyat mantiqan mumkin emas"
+      ],
+      "correctIndex": 3
     },
     {
       "id": 74,
-      "question": "U={1,2,3} olamida ∃x∈U (x>5) gapi qaysi qiymatga ega?",
-      "options": ["Rost", "Yolgʻon", "Aniqlanmagan", "x ga bogʻliq"],
-      "correctIndex": 1
+      "question": "Uchta dasturchi turli soatlarda ishga keldi: 8:00, 9:00, 10:00. Aniq bilamizki: Bobur Alidan keyin keldi. Sardor Boburdan oldin keldi. Birinchi kim keldi?",
+      "options": ["Ali", "Bobur", "Sardor", "Aniqlash mumkin emas"],
+      "correctIndex": 3
     },
     {
       "id": 75,
-      "question": "\"Har bir butun son uchun undan katta butun son mavjud\" — bu fikrning formula koʻrinishi qaysi?",
-      "options": [
-        "∀x ∃y (y>x)",
-        "∃x ∀y (y>x)",
-        "∀x ∀y (y>x)",
-        "∃x ∃y (y>x)"
-      ],
-      "correctIndex": 0
+      "question": "Uchta admin: Aziz, Bahram, Doniyor. Bittasi har doim rost, qolganlari har doim yolgʻon. Aziz: \"Bahram ritsar\". Bahram: \"Doniyor yolgʻonchi\". Doniyor: \"Bahram va Aziz ikkalasi ham yolgʻonchi\". Kim har doim rost gapiradi?",
+      "options": ["Aziz", "Bahram", "Doniyor", "Aniqlash mumkin emas"],
+      "correctIndex": 2
     },
     {
       "id": 76,
-      "question": "\"Hamma talabalar imtihondan oʻtdi\" gapining inkori qaysi?",
+      "question": "Hech bir tashqi server ichki ma'lumotlar bazasiga kira olmaydi. ExtraDB — tashqi server. ExtraDB haqida nima deyish mumkin?",
       "options": [
-        "Hamma talabalar imtihondan oʻtmadi",
-        "Kamida bitta talaba imtihondan oʻtmadi",
-        "Hech bir talaba imtihondan oʻtmadi",
-        "Faqat bitta talaba oʻtmadi"
+        "ExtraDB ichki DB-ga kira oladi",
+        "ExtraDB ichki DB-ga kira olmaydi",
+        "Aniqlash mumkin emas",
+        "ExtraDB hech qanday serverga kira olmaydi"
       ],
       "correctIndex": 1
     },
     {
       "id": 77,
-      "question": "∀x (P(x)→Q(x)) va P(a) rost. Q(a) haqida nima deyish mumkin?",
-      "options": [
-        "Q(a) rost",
-        "Q(a) yolgʻon",
-        "Aniqlanmagan",
-        "Q(a)=P(a)"
-      ],
-      "correctIndex": 0
+      "question": "Toʻrtta xona shifrlangan: A, B, C, D. Bittasi qizil, bittasi koʻk, bittasi yashil, bittasi sariq rangda. A qizil emas va koʻk emas. B yashil emas. C sariq emas va qizil emas. D koʻk. A qaysi rangda?",
+      "options": ["qizil", "koʻk", "yashil", "sariq"],
+      "correctIndex": 3
     },
     {
       "id": 78,
-      "question": "5 va 3 sonlarining bitli AND amal natijasi (5 AND 3) nechaga teng?",
-      "options": ["1", "3", "7", "8"],
+      "question": "Toʻrtta bot: A, B, C, D. Ikkitasi ritsar, ikkitasi yolgʻonchi. A: \"B ritsar\". B: \"C yolgʻonchi\". C: \"D ritsar\". D: \"A va C bir xil turdamiz\". Quyidagilardan qaysi biri toʻgʻri?",
+      "options": [
+        "A va B — ritsar, C va D — yolgʻonchi",
+        "C va D — ritsar, A va B — yolgʻonchi",
+        "A va D — ritsar, B va C — yolgʻonchi",
+        "B va C — ritsar, A va D — yolgʻonchi"
+      ],
       "correctIndex": 0
     },
     {
       "id": 79,
-      "question": "5 va 3 sonlarining bitli OR amal natijasi (5 OR 3) nechaga teng?",
-      "options": ["1", "3", "7", "8"],
-      "correctIndex": 2
+      "question": "Toʻrtta ish hamkasblar oʻrtasida boʻlinadi: kod yozish, dizayn, testlash, hujjat tayyorlash. Toʻrtta xodim: Aziz, Bahodir, Charos, Doniyor. Aziz dizayn ham qilmaydi, hujjat tayyorlash ham emas. Bahodir — testlash. Charos kod yozmaydi. Doniyor — hujjat tayyorlash. Charos nima qiladi?",
+      "options": ["kod yozish", "dizayn", "testlash", "hujjat tayyorlash"],
+      "correctIndex": 1
     },
     {
       "id": 80,
-      "question": "5 va 3 sonlarining bitli XOR amal natijasi (5 XOR 3) nechaga teng?",
-      "options": ["0", "6", "7", "8"],
+      "question": "Barcha asinxron funksiyalar Promise qaytaradi. fetchData() funksiyasi Promise qaytarmaydi. fetchData() haqida nima deyish mumkin?",
+      "options": [
+        "U — asinxron funksiya",
+        "U — asinxron funksiya emas",
+        "Aniqlash mumkin emas",
+        "U — sinxron funksiya"
+      ],
       "correctIndex": 1
     },
     {
       "id": 81,
-      "question": "A XOR A ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Ikkita ishlovchi: Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Yo men yolgʻonchiman, yo Vali yolgʻonchi (yoki ikkalasi ham)\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Hech qaysi"],
       "correctIndex": 0
     },
     {
       "id": 82,
-      "question": "A XOR 0 ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
+      "question": "Uchta web-sayt turli vaqtda ochildi: bugun, kecha, oldingi kuni. sayt1 sayt2-dan oldin ochildi. sayt3 sayt1-dan oldin ochildi. Birinchi qaysi sayt ochildi?",
+      "options": ["sayt1", "sayt2", "sayt3", "Aniqlash mumkin emas"],
       "correctIndex": 2
     },
     {
       "id": 83,
-      "question": "A XOR 1 ifoda nimaga teng?",
-      "options": ["0", "1", "A", "¬A"],
-      "correctIndex": 3
-    },
-    {
-      "id": 84,
-      "question": "n sonining juftligini tekshirish uchun qaysi bitli amal foydali?",
-      "options": [
-        "n AND 1 (oxirgi bitni tekshirish)",
-        "n OR 1",
-        "n XOR 0",
-        "NOT n"
-      ],
-      "correctIndex": 0
-    },
-    {
-      "id": 85,
-      "question": "Toʻplamlardagi A∩B (kesishma) amal qaysi mantiqiy amalga mos keladi?",
-      "options": ["AND (∧)", "OR (∨)", "NOT (¬)", "XOR (⊕)"],
-      "correctIndex": 0
-    },
-    {
-      "id": 86,
-      "question": "Toʻplamlardagi A∪B (birlashma) amal qaysi mantiqiy amalga mos keladi?",
-      "options": ["AND", "OR", "NOT", "XOR"],
+      "question": "Ikkita server: A va B. Biri har doim true, biri har doim false. A: \"Men va B birga true qaytaramiz yoki birga false qaytaramiz\". Kim true qaytaradi?",
+      "options": ["A", "B", "Ikkalasi", "Bunday vaziyat mumkin emas"],
       "correctIndex": 1
     },
     {
-      "id": 87,
-      "question": "Toʻplamlar uchun ¬(A∩B) = ¬A ∪ ¬B munosabati qaysi qonun nomidan keladi?",
-      "options": ["Yutilish", "Distributivlik", "De Morgan", "Assotsiativlik"],
+      "id": 84,
+      "question": "Toʻrtta dasturchi — Ali, Vali, Sardor, Doniyor — toʻrt xil tilda yozadi: Python, Java, C, Rust. Ali Python ham emas, Java ham emas. Vali — C. Sardor Rust emas. Doniyor Python emas. Ali qaysi tilda yozadi?",
+      "options": ["Python", "Java", "C", "Rust"],
+      "correctIndex": 3
+    },
+    {
+      "id": 85,
+      "question": "Agar foydalanuvchi parolni notoʻgʻri kiritsa, tizim \"xato\" xabarini koʻrsatadi. Tizim \"xato\" xabarini koʻrsatdi. Qaysi xulosa MAJBURIY toʻgʻri?",
+      "options": [
+        "Foydalanuvchi parolni notoʻgʻri kiritdi",
+        "Foydalanuvchi parolni toʻgʻri kiritdi",
+        "Aniqlash mumkin emas (boshqa xatolar ham xabarni keltirib chiqarishi mumkin)",
+        "Foydalanuvchi parolni umuman kiritmadi"
+      ],
       "correctIndex": 2
     },
     {
+      "id": 86,
+      "question": "Programmist Ali va Vali. Biri ritsar, biri yolgʻonchi. Vali: \"Ali ritsar\". Ali: \"Men yolgʻonchiman\". Bunday vaziyat mumkinmi?",
+      "options": [
+        "Ha, Ali ritsar",
+        "Ha, Ali yolgʻonchi",
+        "Aniqlash mumkin emas",
+        "Bunday vaziyat mantiqan mumkin emas"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": 87,
+      "question": "Beshta talaba navbatda turibdi: Aziz, Bahodir, Charos, Doniyor, Eshmurod. Aziz Doniyordan oldin. Bahodir hammasidan oldin. Charos Doniyordan keyin. Eshmurod oxirgi emas. Doniyor toʻrtinchi oʻrinda. Charos qaysi oʻrinda?",
+      "options": ["2", "3", "4", "5"],
+      "correctIndex": 3
+    },
+    {
       "id": 88,
-      "question": "A={1,2,3}, B={2,3,4} boʻlsa, A∩B toʻplam qaysi?",
-      "options": ["{1,2,3,4}", "{2,3}", "{1,4}", "∅"],
+      "question": "Ikkita bot: Ali va Vali. Biri ritsar, biri yolgʻonchi. Ali: \"Yo ikkimiz ham yolgʻonchimiz, yo ikkimiz ham ritsarmiz\". Kim ritsar?",
+      "options": ["Ali", "Vali", "Ikkalasi", "Hech qaysi"],
       "correctIndex": 1
     },
     {
       "id": 89,
-      "question": "A={1,2,3}, B={2,3,4} boʻlsa, A∪B toʻplam qaysi?",
-      "options": ["{2,3}", "{1,2,3,4}", "{1,4}", "∅"],
-      "correctIndex": 1
+      "question": "Toʻrtta jihoz — kamera, mikrofon, dinamik, klaviatura — toʻrt xil portga ulanadi: USB, HDMI, AUX, PS/2. Klaviatura — PS/2. Kamera — USB. Mikrofon HDMI emas. Mikrofon qaysi portga ulanadi?",
+      "options": ["USB", "HDMI", "AUX", "PS/2"],
+      "correctIndex": 2
     },
     {
       "id": 90,
-      "question": "n elementli toʻplamning qism toʻplamlari soni nechta?",
-      "options": ["n", "2n", "n²", "2ⁿ"],
-      "correctIndex": 3
+      "question": "Barcha bulutli xizmatlar internet aloqasini talab qiladi. \"OfflineApp\" internet aloqasini talab qilmaydi. OfflineApp haqida nima deyish mumkin?",
+      "options": [
+        "U — bulutli xizmat",
+        "U — bulutli xizmat emas",
+        "Aniqlash mumkin emas",
+        "U — mobil ilova"
+      ],
+      "correctIndex": 1
     },
     {
       "id": 91,
-      "question": "8-bitli n sonning oxirgi bitini 1 ga oʻzgartirish uchun qaysi amal kerak?",
+      "question": "Quyidagi gaplardan qaysi biri faqat ikkala qism ham rost boʻlganda rost boʻladi?",
       "options": [
-        "n AND 11111110",
-        "n OR 00000001",
-        "n XOR 11111111",
-        "NOT n"
+        "Bugun yomgʻir yogʻdi VA quyosh chiqdi",
+        "Bugun yomgʻir yogʻdi YOKI quyosh chiqdi",
+        "Bugun yomgʻir yogʻmadi",
+        "Bugun quyosh chiqdi"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": 92,
-      "question": "8-bitli n sonning oxirgi bitini 0 qilish uchun qaysi amal kerak?",
+      "question": "\"A YOKI B\" gapi qachon yolgʻon boʻladi?",
       "options": [
-        "n OR 00000001",
-        "n AND 11111110",
-        "n XOR 1",
-        "NOT n"
+        "A va B ikkalasi ham rost boʻlganda",
+        "A rost, B yolgʻon boʻlganda",
+        "A yolgʻon, B rost boʻlganda",
+        "A va B ikkalasi ham yolgʻon boʻlganda"
       ],
-      "correctIndex": 1
+      "correctIndex": 3
     },
     {
       "id": 93,
-      "question": "n sonini 2 ga koʻpaytirish uchun qaysi bit operatsiyasi mos keladi?",
-      "options": ["n>>1", "n<<1", "n AND 1", "n OR 1"],
+      "question": "\"EMAS rost\" ifoda nimaga teng?",
+      "options": ["rost", "yolgʻon", "ikkalasi", "hech qaysi"],
       "correctIndex": 1
     },
     {
       "id": 94,
-      "question": "Musbat n sonni 2 ga butun boʻlish uchun qaysi bit operatsiyasi mos keladi?",
-      "options": ["n<<1", "n>>1", "n AND 0", "n OR 0"],
-      "correctIndex": 1
+      "question": "\"A VA B\" gapi qachon rost boʻladi?",
+      "options": [
+        "Faqat A rost boʻlganda",
+        "Faqat B rost boʻlganda",
+        "A va B ikkalasi ham rost boʻlganda",
+        "Hech boʻlmaganda bittasi rost boʻlganda"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 95,
-      "question": "n=12 sonining ikkilik koʻrinishida (1100₂) nechta 1 biti bor?",
-      "options": ["1", "2", "3", "4"],
-      "correctIndex": 1
+      "question": "\"A YOKI B\" gapi qachon rost boʻladi?",
+      "options": [
+        "Faqat A va B ikkalasi rost boʻlganda",
+        "Faqat A rost, B yolgʻon boʻlganda",
+        "Hech boʻlmaganda bittasi rost boʻlganda",
+        "Hech qaysi rost boʻlmaganda"
+      ],
+      "correctIndex": 2
     },
     {
       "id": 96,
-      "question": "Ritsarlar (har doim rost gapiruvchilar) va yolgʻonchilar (har doim yolgʻon gapiruvchilar) orolida A va B uchradi. A: \"Biz ikkalamiz ham yolgʻonchimiz\" dedi. Ular kim?",
-      "options": [
-        "A — ritsar, B — yolgʻonchi",
-        "A — yolgʻonchi, B — ritsar",
-        "Ikkalasi ham ritsar",
-        "Ikkalasi ham yolgʻonchi"
-      ],
-      "correctIndex": 1
+      "question": "\"EMAS (EMAS A)\" ifoda nimaga teng?",
+      "options": ["A", "EMAS A", "rost", "yolgʻon"],
+      "correctIndex": 0
     },
     {
       "id": 97,
-      "question": "Uchta savatda mevalar bor: birinchisida \"olma\", ikkinchisida \"nok\", uchinchisida \"olma va nok\" yorligʻi. Hammasi notoʻgʻri yopishtirilgan. Bitta savatdan bitta meva olib hammasini aniqlash mumkinmi?",
-      "options": [
-        "Mumkin emas",
-        "Mumkin — \"olma va nok\" yorligʻi bor savatdan olish kifoya",
-        "Faqat \"olma\" yorligʻi bor savatdan olish kerak",
-        "Faqat ikkita meva olsangina mumkin"
-      ],
-      "correctIndex": 1
+      "question": "Qaysi mantiqiy amal A va B turli qiymatlarda boʻlsa rost qiymat beradi?",
+      "options": ["VA", "YOKI", "EMAS", "ISTISNO YOKI (XOR)"],
+      "correctIndex": 3
     },
     {
       "id": 98,
-      "question": "12 ta bir xil koʻrinishdagi tanga bor, ulardan biri qalbaki (vazni qolganlardan farq qiladi, ammo qaysi tomonga — nomaʼlum). Tarozi yordamida qalbaki tangani topish uchun kamida nechta oʻlchash kifoya?",
-      "options": ["2", "3", "4", "5"],
+      "question": "\"rost VA yolgʻon\" ifoda nimaga teng?",
+      "options": ["rost", "yolgʻon", "Aniqlanmagan", "Ikkala qiymat ham"],
       "correctIndex": 1
     },
     {
       "id": 99,
-      "question": "Toʻrt kishi koʻprikdan oʻtishi kerak: A — 1 daq., B — 2 daq., C — 5 daq., D — 10 daqiqada oʻtadi. Koʻprikda bir vaqtda eng koʻp 2 kishi yura oladi, fonar bittada, juftlik tezligi sekinroqning vaqti boʻyicha hisoblanadi. Hammasi kamida necha daqiqada oʻtib oladi?",
-      "options": ["15", "16", "17", "19"],
-      "correctIndex": 2
+      "question": "\"rost YOKI yolgʻon\" ifoda nimaga teng?",
+      "options": ["rost", "yolgʻon", "Aniqlanmagan", "Ikkalasi"],
+      "correctIndex": 0
     },
     {
       "id": 100,
-      "question": "Oʻlchov belgilarisiz 3 litrli va 5 litrli idishlar bor, suv cheksiz. Aniq 4 litr suvni oʻlchab olish mumkinmi?",
-      "options": [
-        "Mumkin emas, chunki 4 ni faqat 3 va 5 dan tuzib boʻlmaydi",
-        "Mumkin (masalan, 5 litrlikni toʻldirib, 3 litrlikka quyib, qadamlar bilan)",
-        "Faqat 3 yoki 5 litrni oʻlchash mumkin",
-        "Faqat jami 8 litrgacha oʻlchash mumkin"
-      ],
-      "correctIndex": 1
+      "question": "\"EMAS yolgʻon\" ifoda nimaga teng?",
+      "options": ["rost", "yolgʻon", "Aniqlanmagan", "Hech qaysi"],
+      "correctIndex": 0
     }
   ]
 }
